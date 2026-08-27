@@ -1,0 +1,50 @@
+
+.html {
+    height:100vh;
+    width: 100vw;
+}
+
+.body
+{background-color: rgb(215, 196, 186);
+background-size: contain;
+width: 100%;
+}
+
+.title {
+    font-family:'trebuchet ms','Lucida Sans Unicode';
+    color:rgb(66, 95, 51);
+    justify-self: center;
+    font-size: 2rem;
+}
+.projecttitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bolder;
+    font-size: 2rem;
+}
+.text {
+    font-family: monospace;
+}
+
+a:link{color:inherit}
+a:hover{color: hotpink;}
+
+#me {
+    background-color: rgb(241, 159, 45);
+    height: 200px;
+    width: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    margin-left: 45%;
+
+}
+#contact { 
+    margin-top: 50%;
+}
+.images {
+    min-width: 100%;
+    margin: 40px;
+    object-fit: contain;
+}
+
