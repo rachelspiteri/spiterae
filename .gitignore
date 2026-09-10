@@ -2,6 +2,5 @@
 .gitattributes.old
 .github/
 .vscode/
-*.jpeg
 portfolio/*
 .DS_Store
