@@ -1,0 +1,11 @@
+*.mp4
+.gitattributes.old
+.github/
+.vscode/
+*.jpg
+*.png
+*.PNG
+*.JPG
+*.jpeg
+portfolio/*
+.DS_Store
