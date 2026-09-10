@@ -4,7 +4,6 @@
 .vscode/
 *.png
 *.PNG
-*.JPG
 *.jpeg
 portfolio/*
 .DS_Store
