@@ -1,10 +1,8 @@
 *.mp4
-.gitattributes.old
-.github/
-.vscode/
-.DS_Store
 
-*.pdf
 # manually added to gitignore
 portfolio/poem/becuadse i.psd
 portfolio/organic matter/IMG_2460 copy.PSD
+
+# keep this here
+.DS_Store
