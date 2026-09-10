@@ -3,7 +3,6 @@
 .github/
 .vscode/
 .DS_Store
-*/abstract
 
 *.pdf
 # manually added to gitignore
