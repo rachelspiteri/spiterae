@@ -2,7 +2,6 @@
 .gitattributes.old
 .github/
 .vscode/
-*.jpg
 *.png
 *.PNG
 *.JPG
