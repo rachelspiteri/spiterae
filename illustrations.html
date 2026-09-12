@@ -9,37 +9,38 @@
             min-width: 100%;
         }
         .page {
-            max-width: 100%;
             min-width: 80%;
             max-width: 100%;
             padding-inline:auto; 
-            display: block;
-            object-fit:scale-down;   
-            align-content: center;
+            display: flex;
+            flex-direction: column;
+            object-fit:scale-down;  
+            justify-self: centre;
+            justify-content: center;
         }
         .images {
             min-width: 50%;
             max-width: 90%; 
-            display: block;
+            display:flex;
+            flex-direction: column;
             overflow:none;
-            display: block;
-            align-items:center;
-            margin-inline:auto
+            justify-content: center;
+            margin-inline:auto;
         }
         .image {
-            max-width: 90vw;;
+            max-width: 100%;
             padding-bottom:5% ;
             max-height: 90vh;
             object-fit:scale-down;
+            justify-self: center;
         }
         .scroll {
             display: flex;
             flex-wrap: nowrap;
             overflow-x: auto;
             justify-content: space-around;
-            height: 80%;
+            height: 100%;
             max-width:100%;
-            padding-bottom: 10%; 
         }
         .row {
             display:flex;
@@ -61,28 +62,28 @@
     <img src="portfolio/illustrations/cheerio.png" alt="cheerio" class="image">  
     <img src="portfolio/illustrations/fish.PNG" class="image">
 </div>
+<div class="scroll">
+    <img src="portfolio/illustrations/journey.png" style="margin: 2%;">
+    <img src="portfolio/illustrations/giant.png" style="margin: 2%;">
+</div>
 <div class="images">
 <img src="portfolio/illustrations/giant.png" class="image">
 <img src="portfolio/illustrations/forest.png" class="image">
 </div>
 <div class="scroll">
-    <img src="portfolio/illustrations/journey.png" style="margin: 5%;">
-    <img src="portfolio/illustrations/giant.png" style="margin: 5%;">
-</div>
-<div class="scroll">
-    <img src="portfolio/illustrations/cityman.png" style="margin: 5%;">
-    <img src="portfolio/illustrations/snail copy.PNG" style="margin: 5%;">
-    <img src="portfolio/illustrations/flowers.png" style="margin:5%">
+    <img src="portfolio/illustrations/cityman.png" style="margin: 2%;">
+    <img src="portfolio/illustrations/snail copy.PNG" style="margin: 2%;">
+    <img src="portfolio/illustrations/flowers.png" style="margin:2%">
 </div>
 
 <div class="scroll">
-    <img src="portfolio/illustrations/spider.png"style="margin: 5%;"> 
-    <img src="portfolio/illustrations/dream.JPG" style="margin: 5%;">
-    <img src="portfolio/illustrations/rats.JPG"  style="margin: 5%;">
+    <img src="portfolio/illustrations/spider.png"style="margin: 2%;"> 
+    <img src="portfolio/illustrations/dream.JPG" style="margin: 2%;">
+    <img src="portfolio/illustrations/rats.JPG"  style="margin: 2%;">
 </div>
 <div class="scroll">
-    <img src="portfolio/illustrations/moulding.png" style="margin: 5%;">
-    <img src="portfolio/illustrations/spiky  a4.png" style="margin: 5%;">
+    <img src="portfolio/illustrations/moulding.png" style="margin: 2%;">
+    <img src="portfolio/illustrations/spiky  a4.png" style="margin: 2%;">
 
 </div>
 </page>
