@@ -12,24 +12,38 @@ width: 100%;
 
 .title {
     font-family:'monaco';
-    color:rgb(104, 182, 65);
+    color:rgb(128, 179, 57);
     justify-self: center;
     font-size: 2rem;
-    margin-top: 1rem
+    margin-top: 1rem;
+    font-kerning:;
 }
 .projecttitle {
     font-family: 'monaco';
     font-weight:bolder;
     font-size: 3rem;
 }
+
+.text {
+    font-family: monospace;
+}
 .centre {
     display: flex;
     align-items: center;
 }
-.text {
-    font-family: monospace;
+.back {
+    font-size: 2rem;
 }
-
+a.back:link {
+    text-decoration: none;
+    color:hotpink
+} 
+a.back:hover {
+    text-decoration: underline;
+}
+a.back:visited {
+    color:initial
+}
 a:link{color:inherit}
 a:hover{color: hotpink;}
 a:visited{color:inherit}
