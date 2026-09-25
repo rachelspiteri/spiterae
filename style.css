@@ -16,7 +16,7 @@ width: 100%;
     justify-self: center;
     font-size: 2rem;
     margin-top: 1rem;
-    font-kerning:;
+
 }
 .projecttitle {
     font-family: 'monaco';
@@ -40,6 +40,7 @@ a.back:link {
 } 
 a.back:hover {
     text-decoration: underline;
+    color:white
 }
 a.back:visited {
     color:initial
