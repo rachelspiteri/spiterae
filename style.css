@@ -11,10 +11,10 @@ width: 100%;
 }
 
 .title {
-    font-family:'monaco';
-    color:rgb(128, 179, 57);
+    font-family:"Jacquard 12", system-ui;
+    color:rgba(11, 17, 8, 0.513);
     justify-self: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 1rem;
 
 }
@@ -27,6 +27,19 @@ width: 100%;
 .text {
     font-family: monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+.coral-pixels-regular {
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .centre {
     display: flex;
     align-items: center;
