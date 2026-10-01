@@ -12,15 +12,34 @@
             min-width: 100%;
             max-width:100%
         }
-        .movie {
-            width:90%; 
-        }
         .page {
             max-width: 100%;
             padding: 5%;   
             display: block;
             object-fit:contain; 
             align-content: center;
+        }
+        .back {
+            font-size: 1rem;
+            position: absolute;
+        }
+        .contents {
+            max-width: 100%;
+            min-width: 80%;
+            padding-inline: 2%; 
+            display: block;
+            object-fit:contain; 
+        }
+        .center {
+            display:block;
+            object-fit: cover;
+            aspect-ratio:16/9
+        }
+        .movie {
+            width:100%  ;  
+            height: 100%;
+            object-fit: cover;
+            margin-top: 4rem;
         }
         .scroll {
             display: flex;
@@ -64,20 +83,25 @@
      </style> 
     </head>    
     <body>
-    <div class="back">
-    <a href="animation.html" class="back">
-        <--
-    </a>
-    </div>
+    <div>
+<a href="animation.html" class="back">
+    <-- (<u>animation</u>)
+</a>
+<br>
+<a href="concepts.html"class="back">
+    <-- (<u>conceptdevelopment</u>)
+</a>
+</div>
+    <div class="contents">
+    <div class="center">
         <video controls class="movie">
         <source src="an organic matter.mp4">
-        </video>    
+        </video>  
+    </div>  
  <br> 
-     <div class="projecttitle"> 
-        <p>     
+    <div class="projecttitle">  
     organic matter (2024)
-    </p> 
- </div>
+    </div>
 
     <p class="text">
 This animation deals with themes of loss and grief 
@@ -85,21 +109,13 @@ and aims to reframe death as a continuation of life.
     <br> <br>
 To honor someones life we should honor the ground they came from. 
     <br>
-I want to approach death from a more hopeful 
-standpoint, as a tool for grief. I also sought 
+ I like to believe that passed ones never really leave
+(which is technically true) but become a part of 
+something bigger. I also sought 
 to promote the idea of natural burials, 
 where one can be taken in naturally by living 
 ecosystems.
     <br>
-I like to believe that passed ones never really leave,
-which is technically true, they become a part of 
-something bigger.
-    <br>
-But in cases of green burials one can be buried 
-in shroud or raw wood and be taken by living ecosystem 
-around them. 
-This is possible in over 25 cemetries in Netherlands 
-alone.
     <br>
 Dying alone doesn’t mean going to waste. 
 Nature teaches us something about community, how to 
@@ -107,6 +123,7 @@ support and provide for the other.
 By sustaining the idea of this community in life, 
 I want to reject the idea of solitude in death.
     </p> 
+</div>
     <div class="page">
  <div class="scroll">
 <img src="portfolio/organic matter/cdompaint1.png" class="image">

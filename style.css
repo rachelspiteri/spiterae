@@ -21,9 +21,11 @@ width: 100%;
 .projecttitle {
     font-family: 'monaco';
     font-weight:bolder;
-    font-size: 3rem;
+    font-size: 2rem;
 }
-
+        .scroll ::-webkit-scrollbar {
+            display: none;
+        }
 .text {
     font-family: monospace;
 }

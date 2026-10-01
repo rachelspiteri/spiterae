@@ -1,6 +1,9 @@
 <html>
     <head>
      <link rel="stylesheet" href="style.css">  
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Jacquard+12&display=swap" rel="stylesheet">
      <style>
         .html {
             width: 100vw;
@@ -9,13 +12,14 @@
        }
         .body {
             max-width:100%;
-            overflow-x:hidden
+            overflow-x:hidden;
+
         }
         a:link{color:inherit}
         a:hover{
-            color: hotpink;
             text-decoration:none ;
         }
+
     .page {
         min-width: 80%;
         max-width: 100%;
@@ -23,22 +27,26 @@
         display: block;
         object-fit:scale-down;   
         align-content: center;
-        overflow-x:hidden
+        overflow-x:hidden;
+
         }
     .text {
-        font-size:1.3rem;
         width:100%;
-        background-color: rgba(247, 247, 249, 0);
+        font-size:1.3rem;
+        background-color: rgba(66, 75, 52, 0.914);
+        color: aliceblue;
         text-indent: 5%;
         padding-top: 1rem;
         padding-bottom: 2rem;
+        justify-items: center;
         }
     .image {
-        max-width: 100%;
+        max-width: fit-content;
         height: 90%;
         padding-left: 1rem;
         padding-right: 1rem;
-        max-height:30rem;
+     min-height:30rem;
+     max-height:30rem;
         object-fit:scale-down
         }
     .scroll {
@@ -102,17 +110,6 @@ who nose?
 <br>
 
 <div class="scroll">
-    <img src="portfolio/game/gamess1.jpg" class="image">
-    <img src="portfolio/game/gamess3.jpg" class="image">
-    <img src="portfolio/game/gamess4.jpg" class="image">
-</div>
-<br>
-<div class="text">
-    game
-</div>
-<br>
-
-<div class="scroll">
     <img src="portfolio/stage/curtains.jpg" class="image">
     <img src="portfolio/stage/curtain.png" class="image">
     <img src="portfolio/stage/stage.jpg" class="image">
@@ -121,6 +118,17 @@ who nose?
 <br>
 <div class="text">
     shadow stage
+</div>
+<br>
+
+<div class="scroll">
+    <img src="portfolio/game/gamess1.jpg" class="image">
+    <img src="portfolio/game/gamess3.jpg" class="image">
+    <img src="portfolio/game/gamess4.jpg" class="image">
+</div>
+<br>
+<div class="text">
+    game
 </div>
 <br>
 
@@ -147,8 +155,12 @@ who nose?
 </a>
 </div>
 <br>
+<div class=text >
+    <a href=organicmatter.html>
+ organic matter   
+</a>
+</div>
 
-organic matter
 </p>
 </page>  
 </body>

@@ -13,29 +13,69 @@ body {
     background-position: left; 
     background-color: rgb(233, 214, 214);
 } 
-#me {
-    color: black;
-
+.flex {
+    display:flex;
+    width:100%
 }
+.me {
+    color: black;
+    background-color: rgb(241, 159, 45);
+    height: 400px;
+    width: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    margin-inline: 2rem;
+    object-fit: contain;
+}
+.about {
+    width:40%
+}
+.contact { 
+    margin-top: 50%;
+}
+
 </style>
     </head>
 <body>
 <a href="index.html" class="back">
     back
 </a>
-    <div id="me">
-    this is me 
-    </div>
-    <div id="about">
+<div class="flex"> 
+<div class="about">
     hi!
-    <br><br>
-    im rae
     <br>
-    (artist statement)
+    <br>
+    (artist statement) 
+    <br>
+    I’m Rae Spiteri, an animator and illustrator, 
+    specializing in concept develpment and artistic direction. 
+
+     I explore surreal themes and the human experience through strange scenes 
+with strange characters. 
+<br><br>
+Over the years, I’ve developed a love for stop-motion and 
+producing miniatures, as in my short film ‘End of World’. 
+I'm interested in creating whimsical worlds with a dash of 
+absurdism, using both analogue and digital methods. 
+<br><br>
+I draw inspiration from
+organic forms, sometimes seeping into abstraction.
+Visual aesthetics are fundamental to my works, all 
+containing their own intricacies
+which relate to the fragility of human consciousness. 
+
     <br><br>
     bye!
     </div>
-<div id="contact">
+    <div class="me">
+    this is me 
+    </div>
+   </div>
+
+
+<div class="contact">
     email?
     @bowtiesandpiranhas
 </div>

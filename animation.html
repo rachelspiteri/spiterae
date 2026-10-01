@@ -3,7 +3,7 @@
      <link rel="stylesheet" href="style.css">  
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Jacquard+12&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Jacquard+12&display=swap" rel="stylesheet">
      <style>
         .html {
             width:100vw
@@ -15,19 +15,23 @@
         .page {
             min-width: 80%;
             max-width: 100%;
-            padding-left: 5%;
-            padding-right:5%;  
+            padding-inline: 5%;
             display: block;
             object-fit:scale-down;   
-            align-content: center;
-            align-items: center;
+
         }
         .movie {
         max-width:100%;
         height: 30rem;
         object-fit: scale-down;
         justify-self: center;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
+    
+        }
+        .flex {
+            display:flex;
+            width: 100%;
+            justify-content:space-evenly
         }
         .stills {
         display:flex;
@@ -63,16 +67,19 @@
         <-- 
     </a>
     </div>
-      <p class="title">
+    <p class="title">
             animations
     </p>
 
     <div class="page"> 
-     
-    <div class="movie">
-        <img src="portfolio/clips/dotani.gif" class="movie">           
-    </div>
     
+
+        <img src="portfolio/clips/camel-crop.gif" class="movie">           
+   
+    <div class="movie">
+        <img src="portfolio/clips/dotani-croplong.gif" class="movie">           
+    </div>
+
     <div class="endofworld">
     <div class="stills">
         <img src="portfolio/end of world/stillface.JPG" class="image">        
@@ -81,11 +88,12 @@
         <img src="portfolio/end of world/stillfeet.JPG" class="image">
         <img src="portfolio/end of world/stillclosing.jpg" class="image">  
     </div>
-             <p>
+             <div class="text">
         <a href="endofworld.html">
               end of world (2024)
         </a>
        </p>
+       </div>
     </div>
     <div class="organicmatter">
     <div class="stills">
@@ -94,11 +102,11 @@
         <img src="portfolio/organic matter/stillshadow.PNG"class="image">
         <img src="portfolio/organic matter/stilltop.PNG"class="image">
     </div>
-    <p>
+<div class="text">
     <a href="organicmatter.html">
         an organic matter (2024)
     </a> 
-   </p> 
+</div> 
     </div>
     <br>
     <div class="abstract">
@@ -110,11 +118,11 @@
         <img src="portfolio/abstract/still6.png"class="image">
         <img src="portfolio/abstract/still7.png"class="image">
     </div>
-        <p>
+        <div class="text">
         <a href="nebula.html">
               <u>nebula </u>(2024)
         </a>
-        </p> 
+    </div> 
     </div>
     </div>
 </body>
