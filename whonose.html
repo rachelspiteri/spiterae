@@ -41,43 +41,29 @@
     }
 .image {
     width:100%;
+    max-width:100vw;
     object-fit:contain;
 }
 .img {
-    width:30%;
     object-fit:contain;
+    margin-inline: 1rem;
+    height:50vh
 }
-.plan {
-    display:block;
-    max-width: 100%;
+.imge {
+    object-fit:contain;
+    margin-inline: 1rem;
+    height:50vh;
+    max-width:100vw
+}
 
-}
 .scroll {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: space-around;
-    height: 70%;
     max-width:100%;
-    padding-bottom: 10%; 
 }
-.longscroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: space-around;
-    height: 90%; 
-}
-
-        .scroll {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: space-around;
-    height: 60%;
-    max-width:80%; 
-        }
-                .scroll-v {
+.scroll-v {
     display: flex;
     flex-direction:column;
     flex-wrap: nowrap;
@@ -85,12 +71,64 @@
     justify-content: space-around;
     height: 40%;
     max-width:40%
+}
+    .scroll ::-webkit-scrollbar {
+        display: none;
         }
+
+    @media only screen and (max-width:600px){
+    body {
+max-width: 100vh;
+overflow-x: hidden;
+}
+    .scroll {
+        height:200px
+    }
+.imge {}
+}
+
+@media  (max-width: 1024px) {
+
+}
      </style> 
     </head>   
 <body>
     <a href="concepts.html" class="back">
         <-
     </a>
+
+    <div class="page">
+<div>
+    <img src="portfolio/pitch/characters.png" class="image">
+</div>
+<div class="projecttitle">
+  who nose?
+</div>
+        <div class="scroll">
+<img src="portfolio/pitch/mc rules 05:12.png" class="img">
+<img src="portfolio/pitch/mc colours.png" class="img">
+<img src="portfolio/pitch/hobo rules 5:12.png" class="img">
+<img src="portfolio/pitch/barber model test.png" class="img">
+<img src="portfolio/pitch/journalist .png" class="img">
+<img src="portfolio/pitch/pitchd.png" class="img">
+<img src="portfolio/pitch/pitchsketch4.png" class="img">
+</div> 
+<div class="text">
+    characters
+    <br>
+</div>
+        <div class="scroll">
+<img src="portfolio/pitch/pitchstyle1.gif" class="imge">
+<img src="portfolio/pitch/pitchstyle3.png" class="imge">
+<img src="portfolio/pitch/office.png" class="imge">
+<img src="portfolio/pitch/pitchsketch.png" class="imge">
+<img src="portfolio/pitch/pitchtest3.png .png" class="imge">
+<img src="portfolio/pitch/Screenshot 2025-12-05 at 20.11.59 1.png" class="imge">
+<img src="portfolio/pitch/pitchsketch2.png" class="imge">
+</div> 
+<div class="text">
+    environments
+    <br>
+</div>
 </body>
 </html>
