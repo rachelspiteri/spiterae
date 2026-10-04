@@ -26,14 +26,10 @@ a:visited{color:inherit}
    background-image: url('portfolio/design/title5.png');
 }
 .name {
+    background-image: url('portfolio/design/titlepink5.png');
     font-size: 6rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position:absolute;
-    margin-top: 200px;
-    left:55%;
-
     color: hotpink;
-    background-image: url('portfolio/design/titlepink5.png');
     width:40%;
     background-size: contain;
     height: 100px;
@@ -43,7 +39,8 @@ a:visited{color:inherit}
 .namecontainer {
     width:100%;
     position:absolute;
-    
+    top: 20%;
+    margin-left:60%
 }
 .sections {
     color:white;
@@ -69,6 +66,11 @@ background-attachment: fixed;
     position:absolute;
     top:50%
 }
+.namecontainer { 
+    position: relative;
+    margin-left:50%;
+    margin-top:35%;
+}
 }
 
 @media only screen and (orientation: portrait){
@@ -77,7 +79,9 @@ background-attachment: fixed;
     background-image:url(portfolio/stage/curtainnarrowercrop.png);
     background-size:cover;
 }
-.name { margin-left:50%
+.namecontainer { 
+    margin-left:50%;
+    top:35%;
 }
 }  
 @media  (max-width: 1024px) {
@@ -94,7 +98,6 @@ background-attachment: fixed;
 }  
 .namecontainer {
     height: 3rem;
-      position: absolute;
     top:35%;
     left:10%
 }
