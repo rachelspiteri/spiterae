@@ -15,8 +15,9 @@ overflow-x: hidden;
     font-family:"Jacquard 12", system-ui;
     color:rgba(11, 17, 8, 0.513);
     justify-self: center;
-    font-size: 3rem;
+    font-size: 8rem;
     margin-top: 1rem;
+    margin-bottom:3rem;
     text-align: center;
 }
 .projecttitle {
