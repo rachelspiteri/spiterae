@@ -27,13 +27,15 @@
             width:40%;
             margin-left:50%
         }
-        .contents {
+                .contents {
             max-width: 100%;
             min-width: 80%;
-            padding-inline: 2%; 
+            padding-inline:1rem; 
             display: block;
             object-fit:contain; 
-        }
+            height:min-content;
+                }
+
         .center {
             display:block;
             object-fit: cover;
@@ -65,7 +67,7 @@
         height:50vh
     }
         .image {
-            width:100vh;
+            width:90%;
             padding:1.5rem;
             height: fit-content;
             max-width: 100%;
@@ -97,9 +99,8 @@
         @media  (max-width: 1024px) {
             .image {
                 max-width: 100%;
-                height: fit-content;
+                height: min-content;
                 object-fit: contain;
-
             }
             .text {
                 margin: 0%;
@@ -121,9 +122,10 @@
 </div>
     <div class="contents">
     <div class="center">
-        <video controls class="movie">
-        <source src="an organic matter.mp4">
-        </video>  
+<iframe title="vimeo-player" 
+src="https://player.vimeo.com/video/1233517500?h=cf14ce2d54" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   
+allowfullscreen>
+</iframe>
     </div>  
  <br> 
     <div class="projecttitle">  
@@ -162,12 +164,13 @@ I want to reject the idea of solitude in death.
 <img src="portfolio/organic matter/cdompaint4.png" class="img">
 <img src="portfolio/organic matter/cdompoem2.png" class="img">
 </div> 
-<div class="dig">     
+<div>     
 <img src="portfolio/organic matter/cdomcolours.JPG" alt="colour schemes" class="image">
 <img src="portfolio/organic matter/cdomstoryboard.2.jpg" alt="colour schemes" class="image">
 <img src="portfolio/organic matter/cdomstoryboard.1.jpg" alt="colour schemes" class="image">
 <img src="portfolio/organic matter/cdomstoryboard1.jpg" alt="colour schemes" class="image">
 <img src="portfolio/organic matter/cdomvisuals.png" alt="visuals" class="image">
+</div>
 </div>
     </body>
 </html>
