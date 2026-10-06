@@ -23,10 +23,28 @@
         .movie {
         width:100%;
         }
+        .text {
+            width:40%;
+            margin-left:50%
+        }
         a:link{color:inherit}
         a:hover{
             color: hotpink;
             text-decoration:none ;
+        }
+
+                @media  (max-width: 1024px) {
+            .image {
+                max-width: 100%;
+                height: fit-content;
+                object-fit: contain;
+
+            }
+            .text {
+                margin: 0%;
+                margin-top:.6rem;
+                width: 100%;
+            }
         }
      </style> 
     </head>    
