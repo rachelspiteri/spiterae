@@ -75,7 +75,6 @@
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: space-around;
-        height: 90%; 
         object-fit: contain;
         scrollbar-width:none;
         }
@@ -86,6 +85,10 @@
         display: none;
         }
 
+        a.back:link {
+            color:rgba(246, 248, 235, 0.815);
+       
+        }
     a:link{color:inherit}
     a:hover{color: hotpink;
             text-decoration:none ;}
@@ -99,6 +102,9 @@ overflow-x: hidden;
 .page {
 padding-top: 2rem;
 margin-inline:2rem
+}
+.long {
+    max-height:70vh
 }
         }
      </style> 
@@ -164,7 +170,7 @@ concept development
 <div class="longscroll">
     <img src="portfolio/poem/poemstrip.png" class="long" alt="poem">
 </div>
-<div class=text style="padding-top:0">
+<div class=text >
     <a href=poem.html>
     'Because I could not stop for death'
 </a>

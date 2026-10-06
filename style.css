@@ -61,7 +61,8 @@ overflow-x: hidden;
 }
 a.back:link {
     text-decoration: none;
-    color:hotpink
+    color:hotpink;
+    margin-left:.7rem
 } 
 a.back:hover {
     text-decoration: underline;

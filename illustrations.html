@@ -14,7 +14,8 @@
         .page {
             min-width: 80%;
             max-width: 100%;
-            padding-inline:auto; 
+            margin-inline: 1rem;
+            margin-bottom:3rem;
             display: flex;
             flex-direction: column;
             object-fit:scale-down;  
@@ -23,7 +24,6 @@
         }
         .images {
             min-width: 50%;
-            max-width: 90%; 
             display:flex;
             flex-direction: column;
             overflow:none;
@@ -32,10 +32,13 @@
         }
         .image {
             max-width: 100%;
-            padding-bottom:5% ;
-            max-height: 90vh;
+            padding-bottom:1rem ;
+            max-height: 80vh;
             object-fit:scale-down;
             justify-self: center;
+        }
+        .img {
+            margin-right:1rem;
         }
         .scroll {
             display: flex;
@@ -48,46 +51,79 @@
         }
         .row {
             display:flex;
-            max-width: 100%;
-            aspect-ratio: inherit;
-            max-height:100%
+            aspect-ratio: 1;
+            max-height:90%
         }
+.zoom {
+    width:15rem;
+    height:20rem;
+    margin-inline: auto;
 
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scroll-margin-block-start: 400px;
+    scroll-margin-inline-start: 600px;
+    scrollbar-width: none;
+}
+.text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
             @media only screen and (max-width:600px){
     body {
 max-width: 100vw;
 overflow-x: hidden;
 }
 .scroll {
-    
+    height:min-content;
+    object-fit: contain;
 }
 .img {
-    margin:.3rem;
-    max-width:90vw;
-    object-fit: contain;
+    margin-right:.6rem;
+    width:auto;
+    height: 60dvh;
+    
+}
+.imag {
+    max-width:80dvw;
+    min-height:100%;
 
 }
+}
 @media  (max-width: 1024px) {
+.image {
+    max-height:85dvh;
 
+}
 }
      </style> 
 </head>
 <body>
+
 <div class="back">
 <a href="index.html" class="back"> 
     <-- 
 </a>    
 </div>
-<page>
+
+<div class="page">
     <h1 class="title">
         illustrations
     </h1>
+
 <div class="images">
     <img src="portfolio/illustrations/skeletons.png" alt="skeletons" class="image" style="padding: 0;">
 </div>
 
+<div class="zoom">
+   <img src="portfolio/illustrations/journey copy.png" ;>
+</div>
+<p class="text">
+    come explore
+</p>
+
 <div class="scroll">
-    <img src="portfolio/illustrations/journey.png" class="img";>
+    <img src="portfolio/illustrations/journey copy.png" class="img";>
     <img src="portfolio/illustrations/giant.png" class="img";>
 </div>
 
@@ -103,8 +139,7 @@ overflow-x: hidden;
 
 <div class="images">
     <img src="portfolio/illustrations/crouchcrop.png" class="image">
-    <img src="portfolio/illustrations/preciouspink2.png" class="image">
-</div>
+   </div>
 
 <div class="scroll">
     <img src="portfolio/illustrations/cheerio.png" class="img";>  
@@ -117,18 +152,19 @@ overflow-x: hidden;
 <img src="portfolio/illustrations/forest.png" class="image">
 </div>
 
-<div class="scroll">
-    <img src="portfolio/illustrations/spider.png"class="img";> 
-    <img src="portfolio/illustrations/dream.JPG" class="img";>
-    <img src="portfolio/illustrations/rats.JPG"  class="img";>
+<div class="scroll" style="padding-inline: 2rem;">
+    <img src="portfolio/illustrations/spider.png"class="imag";> 
+    <img src="portfolio/illustrations/dream.JPG" class="imag";>
+    <img src="portfolio/illustrations/rats.JPG"  class="imag";>
 </div>
 <div class="images">
+ <img src="portfolio/illustrations/preciouspink2.png" class="image">
 </div>
 <div class="scroll">
     <img src="portfolio/illustrations/spiky  a4.png" class="img";>
     <img src="portfolio/illustrations/moulding.png" class="img";>
     <img src="portfolio/illustrations/skoobi pink.png" class="img";>
 </div>
-</page>
+</div>
 </body>
 </html>
