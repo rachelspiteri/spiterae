@@ -10,19 +10,32 @@
         }
         body {
             min-width: 100%;
-            max-width:100%
+            max-width:100%;
+            max-height:min-content;
+            background-color:rgba(59, 13, 30, 0.806) ;
         }
         .page {
             min-width: 80%;
             max-width: 100%;
-            padding-inline: 5%;
+            padding-inline: 2rem;
+            padding-top:3rem;
+            margin-inline: 3rem;
             display: block;
             object-fit:scale-down;   
+            background-color:rgb(251, 243, 233);
         }
-        .text {
-            text-align: center;
-            margin-top:.2rem;
-            font-size: 1.6rem;
+        .title {
+            margin-bottom: 3rem;
+            color:rgb(251, 243, 233);
+        }
+            .text {
+        width:100%;
+        font-size:1.3rem;
+        background-color:rgba(59, 13, 30, 0.806) ;
+        color: rgba(240, 248, 255, 0.812);
+        text-align: center;
+        padding-top: 1.3rem;
+        padding-bottom: 2rem;
         }
         .movie {
             max-width:100%;
@@ -46,6 +59,13 @@
         object-fit: scale-down;
         align-items: center;
         }
+.stills {
+        margin-inline:2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+}
+        
         .image {
         max-width: 100%;
         height: 90%;
@@ -59,6 +79,22 @@
             color: hotpink;
             text-decoration:none ;
         }
+
+            @media only screen and (max-width:600px){
+    body {
+max-width: 100vw;
+overflow-x: hidden;
+}
+.page {
+padding-top: 2rem;
+margin-inline:2rem
+}
+.imge {}
+}
+
+@media  (max-width: 1024px) {
+
+}
      </style> 
     </head>    
 <body>
@@ -90,7 +126,7 @@
     </div>
 <div class="text">
     <a href="organicmatter.html">
-        an organic matter (2024)
+        an organic matter
     </a> 
 </div> 
     </div>
@@ -105,7 +141,7 @@
     </div>
     <div class="text">
         <a href="endofworld.html">
-              end of world (2024)
+              end of world
         </a>
     </div>
     </div>
@@ -121,7 +157,7 @@
     </div>
         <div class="text">
         <a href="nebula.html">
-              <u>nebula </u>(2024)
+            nebula 
         </a>
     </div> 
     </div>

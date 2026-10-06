@@ -13,25 +13,33 @@
         body {
         background-size:contain;
         background-position: left; 
-        background-color: rgb(216, 214, 101) !important;
+        background-color:rgba(27, 76, 42, 0.813);
         overflow-x:hidden;
        } 
 
-    .page {
-        width: 100%;
-        padding-inline:none;
-        display: block;
-        object-fit:scale-down;   
-        align-content: center;
-        overflow-x:hidden;  
+                .page {
+            min-width: 80%;
+            max-width: 100%;
+            overflow-x:hidden;  
+            padding-inline: 2rem;
+            padding-top:3rem;
+            margin-inline: 3rem;
+            display: block;
+            align-content: center;
+            object-fit:scale-down;   
+            background-color:rgb(246, 248, 235);
         }
+   
+.title {
+    margin-bottom:3rem
+}
     .text {
         width:100%;
         font-size:1.3rem;
-        background-color:rgba(11, 17, 8, 0.374);
+        background-color:rgba(27, 76, 42, 0.813);
         color: rgba(240, 248, 255, 0.812);
         text-align: center;
-        padding-top: 1rem;
+        padding-top: 1.3rem;
         padding-bottom: 2rem;
         }
     .image {
@@ -52,7 +60,14 @@
         justify-content: space-between;
         object-fit: scale-down;
         align-items: center;
-        margin-inline:1rem
+        margin-inline:2rem;
+        background-color: white;
+        padding-top: 1rem;
+        padding-bottom: 1em;
+        margin-top: 2rem;
+        mix-blend-mode: multiply;
+        
+
         }
     .long {
         height:100%;
@@ -80,6 +95,18 @@
     a:link{color:inherit}
     a:hover{color: hotpink;
             text-decoration:none ;}
+
+
+        @media only screen and (max-width:600px){
+    body {
+max-width: 100vw;
+overflow-x: hidden;
+}
+.page {
+padding-top: 2rem;
+margin-inline:2rem
+}
+        }
      </style> 
 </head>
 <body>
@@ -103,18 +130,16 @@ Concept development
     who nose?'
     </a>
 </div>
-<br>
 
 <div class="scroll">
     <img src="portfolio/theatre/theatre1.JPG" class="image">
     <img src="portfolio/theatre/theatre2.JPG" class="image">
     <img src="portfolio/theatre/theatre3.JPG" class="image">
 </div>
-<br>
+
 <div class="text">
     'Creature Feature'
 </div>
-<br>
 
 <div class="scroll">
     <img src="portfolio/stage/curtains.jpg" class="image">
@@ -122,36 +147,25 @@ Concept development
     <img src="portfolio/stage/stage.jpg" class="image">
     <img src="portfolio/stage/stageink.jpg" class="image">
 </div>
-<br>
 <div class="text">
     shadow theatre
 </div>
-<br>
 
 <div class="scroll">
-    <img src="portfolio/game/gamess1.jpg" class="image">
-    <img src="portfolio/game/gamess3.jpg" class="image">
-    <img src="portfolio/game/gamess4.jpg" class="image">
-</div>
-<br>
-<div class="text">
-    'Wake up Marie'
-</div>
-<br>
+    <img src="portfolio/organic matter/cdompaint1.png" class="image">
+    <img src="portfolio/organic matter/cdompaint2.png" class="image">
+    <img src="portfolio/organic matter/cdompaint4.png" class="image">
 
-<div class="scroll">
-    <img src="portfolio/end of world/eowsketch.jpg" class="image">
-    <img src="portfolio/end of world/eowbts1.jpg" class="image">
-    <img src="portfolio/end of world/eowstoryboard.jpg" class="image">
+    <img src="portfolio/organic matter/cdompoem2.png" class="image">
+    <img src="portfolio/organic matter/cdompaint3.png" class="image">
 </div>
-<br>
-<div class="text">
-    end of world     
-<a href="endofworld.html" style="margin-right:3rem"> 
-    .......see more?
+<div class=text >
+    <a href=organicmatter.html>
+ organic matter   
 </a>
 </div>
-<br>
+
+
 
 <div class="longscroll">
     <img src="portfolio/poem/poemstrip.png" class="long" alt="poem">
@@ -161,11 +175,27 @@ Concept development
     'Because I could not stop for death'
 </a>
 </div>
-<br>
-<div class=text >
-    <a href=organicmatter.html>
- organic matter   
+
+<div class="scroll">
+    <img src="portfolio/end of world/eowsketch.jpg" class="image">
+    <img src="portfolio/end of world/eowbts1.jpg" class="image">
+    <img src="portfolio/end of world/eowstoryboard.jpg" class="image">
+</div>
+<div class="text">
+    end of world     
+<a href="endofworld.html" style="margin-right:3rem"> 
+    .......see more?
 </a>
+</div>
+
+<div class="scroll">
+    <img src="portfolio/game/gamess1.jpg" class="image">
+    <img src="portfolio/game/gamess3.jpg" class="image">
+    <img src="portfolio/game/gamess4.jpg" class="image">
+</div>
+
+<div class="text">
+    'Wake up Marie'
 </div>
 
 </p>
