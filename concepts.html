@@ -17,7 +17,7 @@
         overflow-x:hidden;
        } 
 
-                .page {
+        .page {
             min-width: 80%;
             max-width: 100%;
             overflow-x:hidden;  
@@ -85,10 +85,6 @@
         display: none;
         }
 
-        a.back:link {
-            color:rgba(246, 248, 235, 0.815);
-       
-        }
     a:link{color:inherit}
     a:hover{color: hotpink;
             text-decoration:none ;}
@@ -107,9 +103,23 @@ margin-inline:2rem
     max-height:70vh
 }
         }
+        @media  (min-width: 1024px) {
+.topbar { 
+    display:flex;
+    direction:inline;
+}
+.title {
+    margin-inline:auto
+}
+.page {
+    padding-top:0
+}
+}
+
      </style> 
 </head>
 <body>
+    <div class="topbar">
     <div class="back">
 <a href="index.html" class="back"> <-- </a>  
 </div>
@@ -117,6 +127,7 @@ margin-inline:2rem
 <p class="title">
 concept development
 </p>
+</div>
 
 <div class=page>
 <div class="scroll" style="background-color: white; margin-inline:0;">

@@ -56,13 +56,26 @@
         overflow-x: auto;
         justify-content: space-around;
         object-fit: scale-down;
-        align-items: center;
-        }
-.stills {
         margin-right:2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        
+    }
+    @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
+.gif {
+        max-height:70dvh;
+        width:fit-content;
+        margin-right:2rem
+}
+.gifs {display:flex;
+direction:inline;
+    justify-content: center;
+margin-inline:0; 
+width:100%;
+object-fit: contain;
+margin-bottom:3rem
 }
         .image {
         max-width: 100%;
@@ -90,11 +103,21 @@ margin-inline:2rem
 .image {
     padding-left:0
 }
-            }
-
+.gifs{display: block;
+ 
+    max-width:100%;
+    object-fit: contain;
+    justify-items: center;
+    justify-self: center;
+}
+.gif {
+  width: 100%;
+  max-height:80dvh;
+margin-inline: auto;
+}
 @media  (max-width: 1024px) {
 
-}
+}}
      </style> 
     </head>    
 <body>
@@ -109,22 +132,15 @@ margin-inline:2rem
 
     <div class="page"> 
 
-    <div class="scroll" style="margin-inline:0; overflow-x: hidden;">
+    <div class="gifs" >
         <div>
-        <img src="portfolio/clips/dotani-croplong.gif" class="image">           
+        <img src="portfolio/clips/dotani-croplong.gif" class="gif">           
     </div>
     <div>
-        <img src="portfolio/clips/camel-crop.gif" class="image">           
+        <img src="portfolio/clips/camel-crop.gif" class="gif">           
    </div>
    </div>
    
-    <div class="movie">
-        <img src="portfolio/clips/dotani-croplong.gif" class="movie">           
-    </div>
-    <div class="movie">
-        <img src="portfolio/clips/camel-crop.gif" class="movie">           
-   </div>
-
 
     <div class="organicmatter">
     <div class="stills">

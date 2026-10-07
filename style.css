@@ -15,10 +15,11 @@ overflow-x: hidden;
     font-family:"Jacquard 12", system-ui;
     color:rgba(11, 17, 8, 0.513);
     justify-self: center;
-    font-size: 8rem;
-    margin-top: .7rem;
+    font-size: 7rem;
+    margin-top: 0rem;
     margin-bottom:1.6rem;
     text-align: center;
+    justify-self: center;
 }
 .projecttitle {
     font-family: 'monaco';
@@ -59,18 +60,17 @@ overflow-x: hidden;
     display: flex;
     align-items: center;
 }
-a.back:link {
+a.back:any-link {
     text-decoration: none;
     color:hotpink;
-    margin-left:.7rem
+    margin-left:.7rem;
+    font-size: 2.5rem;
 } 
 a.back:hover {
     text-decoration: underline;
     color:rgba(255, 255, 255, 0)
 }
-a.back:visited {
-    color:initial
-}
+
 a:link{color:inherit}
 a:hover{color: hotpink;}
 a:visited{color:inherit}
@@ -91,3 +91,12 @@ a:visited{color:inherit}
     }
 }
 
+@media  (min-width: 1024px) {
+.topbar { 
+    display:flex;
+    direction:inline;
+}
+.title {
+    margin-inline:auto
+}
+}
