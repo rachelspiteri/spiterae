@@ -43,26 +43,30 @@
         }
         .img {
             margin-right:1rem;
-            height:70dvh
+            height:80dvh
         }
         .scroll {
             display: flex;
             flex-wrap: nowrap;
             overflow-x: auto;
-            justify-content: space-around;
+            justify-content: space-between;
             height: 100%;
             width:auto;
             max-width:100%;
-            object-fit: scale-down;
+            object-fit: contain;
         }
         .row {
             display:flex;
             width:100%;
-            justify-content: space-around;
+            justify-content: center;
             max-height:90%
         }
         .imag { 
-            width:30%
+            width:30%;
+        }
+        .imagp {
+            width:35%;
+            margin-inline:1rem
         }
 
 .zoom {
@@ -81,10 +85,6 @@
     margin-bottom: 3rem;
 }
             @media only screen and (max-width:600px){
-    body {
-max-width: 100dvw;
-overflow-x: hidden;
-}
 .page {
 padding-top: 2rem;
 margin-inline:2rem
@@ -98,9 +98,12 @@ margin-inline:2rem
     width:auto;
     height: 30rem;
         }
-
 }
 @media  (max-width: 1024px) {
+    body {
+max-width: 100dvw;
+overflow-x: hidden;
+}
 .image {
     max-height:85dvh;
     height:min-content;
@@ -114,6 +117,13 @@ margin-inline:2rem
     margin-left:2rem
 }
 .imag {
+    width:100dvw;
+    height:auto;
+    max-height:70dvh;
+    margin-inline: 1rem;
+    padding-inline:1rem
+}
+.imagp {
     width:70dvw;
     height:auto;
     max-height:70dvh;
@@ -121,13 +131,15 @@ margin-inline:2rem
     padding-inline:1rem
 }
 .row {
-   max-height:80dvh;
-   width:fit-content;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            object-fit: scale-down;
-            scrollbar-width: none;
+    max-height:80dvh;
+    width:90dvw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    overflow-x: scroll;
+    object-fit: scale-down;
+    scrollbar-width: none;
+    margin-left:2rem
 }
 }
 
@@ -168,8 +180,8 @@ margin-inline:2rem
 </div>
 
 <div class="row">
-    <img src="portfolio/illustrations/remainssmall.png" class="imag";>
-    <img src="portfolio/illustrations/communion.png" class="imag";>
+    <img src="portfolio/illustrations/remainssmall.png" class="imagp";>
+    <img src="portfolio/illustrations/communion.png" class="imagp";>
 </div>
 
 <div class="images">
@@ -188,8 +200,8 @@ margin-inline:2rem
 </div>
 
 <div class="row" style="padding-inline: 2rem;">
-    <img src="portfolio/illustrations/spider.png"class="imag";> 
     <img src="portfolio/illustrations/dream.JPG" class="imag";>
+    <img src="portfolio/illustrations/spider.png"class="imag";> 
     <img src="portfolio/illustrations/rats.JPG"  class="imag";>
 </div>
 <div class="images">
