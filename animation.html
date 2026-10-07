@@ -69,13 +69,13 @@
         width:fit-content;
         margin-right:2rem
 }
-.gifs {display:flex;
-direction:inline;
+        .gifs {display:flex;
+    direction:inline;
     justify-content: center;
-margin-inline:0; 
-width:100%;
-object-fit: contain;
-margin-bottom:3rem
+    margin-inline:0; 
+    width:100%;
+    object-fit: contain;
+    margin-bottom:3rem
 }
         .image {
         max-width: 100%;
@@ -115,9 +115,22 @@ margin-inline:2rem
   max-height:80dvh;
 margin-inline: auto;
 }
+            }
 @media  (max-width: 1024px) {
-
-}}
+.gifs{
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    object-fit: contain;
+    justify-items: center;
+    justify-self: center;
+}
+    .gif {
+    width: 100%;
+    max-height:80dvh;
+    margin-inline: auto;
+}
+}
      </style> 
     </head>    
 <body>
