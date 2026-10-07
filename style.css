@@ -82,7 +82,9 @@ a:visited{color:inherit}
 }
 
 @media  (max-width: 1024px) {
-
+.body {
+    max-width:100dvw
+}
     .title {
         font-size: 6rem;
     }
