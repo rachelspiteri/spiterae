@@ -8,11 +8,11 @@
         .html {
             width:100vw
         }
-        .body {
+        body {
             min-width: 100%;
             max-width:100%;
-            background-color: antiquewhite;}
-
+        }
+        
         .contents {
             max-width: 100%;
             min-width: 80%;
@@ -20,21 +20,29 @@
             display: block;
             object-fit:contain; 
             height:min-content;
+            justify-content:center ;
         }
         .center {
             display:block;
             object-fit: cover;
             aspect-ratio:16/9;
-            background-color: ;}
+            width:90%;
+            justify-self: center;
+        }
         .movie {
             width:100%  ;  
             height: 100%;
             object-fit: cover;
-            margin-top: 4rem;
+            margin-top: 1rem;
+        }
+        .projecttitle {
+            justify-self:end;
+            margin-right:4.2rem
         }
         .text {
             width:40%;
-            margin-left:50%
+            margin-left:4.2rem;
+            font-size:1.3rem
         }
         .image {
             width:100%;
@@ -49,19 +57,17 @@
             height: min-content;
             max-width:100%; 
         }
-        .back {
-            font-size: 1rem;
-            position: absolute;
-        }
-        a:link{color:inherit;
+
+        a.back:link{
         text-decoration:none ;
+        font-size:1.3rem
         }
-        a:hover{
-        color: hotpink;
-        text-decoration:none ;
-        }     
+
 
         @media  (max-width: 1024px) {
+            .center {
+                width:100%
+            }
             .image {
                 max-width: 100vw;
                 height: min-content;
@@ -70,10 +76,19 @@
             .scroll {
                 height:min-content
             }
+            .projecttitle {
+                font-size:2rem;
+                margin-right:0
+            }
             .text {
                 margin: 0%;
                 margin-top:.6rem ;
-                width: 100%;
+                width: 90%;
+                font-size:1.4rem;
+                justify-self: start;
+            }
+            a.back:link {
+                font-size:1.7rem;
             }
         }
     </style> 
@@ -102,8 +117,8 @@
               end of world (2024)
     </div>            
    <p class="text">
-    A cryptic creature with a cryptic message. 
-    <br>
+  <i> A cryptic creature with a cryptic message. </i> 
+    <br><br>
     This short stop-motion animation follows a nihilistic little creature who has come to terms with their own fate, sitting and waiting for their fragile world to collapse.
     <br><br>
     This was my first project, which I put into motion on my own in my brother's bedroom. 
@@ -123,7 +138,3 @@
 </page>
 </body>
 </html>
-  controls class="movie" poster="stillclosing.jpg">
-            <source src="end of world .mp4">
-          </video
- 
