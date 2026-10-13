@@ -11,28 +11,22 @@ html {
 body {
     background-size:     contain;
     background-position: left; 
-    background-color: rgb(233, 214, 214);
+    background-color: rgb(242, 223, 225);
 } 
 .flex {
     display:flex;
+    flex-direction: row;
     width:100%;
     justify-self:center;
+    align-items: baseline;
 }
 .me {
-    color: black;
     background-color: rgb(241, 159, 45);
     height: 400px;
-    width: 40%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30%;
-    margin-inline: 2rem;
     object-fit: contain;
 }
 .img {
-width:300px;
-height:auto
+height:400px;
 }
 .text {
     width:40%;
@@ -55,6 +49,10 @@ margin-inline:2rem
 .flex {
     display:block;
     justify-items: center;
+}
+.me {
+    justify-self: right;
+margin-right: 4rem;
 }
 .text {
     width:80%;
