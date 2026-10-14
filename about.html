@@ -13,20 +13,26 @@ body {
     background-position: left; 
     background-color: rgb(242, 223, 225);
 } 
+.grid {
+        display:grid;
+    grid-template-columns: 3fr;
+}
 .flex {
     display:flex;
     flex-direction: row;
     width:100%;
     justify-self:center;
-    align-items: baseline;
+    padding-inline:3rem
 }
 .me {
     background-color: rgb(241, 159, 45);
     height: 400px;
     object-fit: contain;
+    margin-inline:4rem
 }
 .img {
-height:400px;
+height:600px;
+object-fit: contain;
 }
 .text {
     width:40%;
@@ -47,21 +53,21 @@ padding-top: 2rem;
 margin-inline:2rem
 }
 .flex {
-    display:block;
-    justify-items: center;
+    flex-direction: column;
 }
 .me {
     justify-self: right;
-margin-right: 4rem;
+
 }
 .text {
-    width:80%;
+    width:100%;
 padding-left: 2rem;
 }
         }
 </style>
     </head>
 <body>
+    <div class="grid">
 <a href="index.html" class="back">
     <--
 </a>
@@ -72,14 +78,14 @@ padding-left: 2rem;
     <div class="me">
     <img src="portfolio/raeglow.png" class="img">
     </div>
-   </div>
-  
+
 <div class="text">
+<div>
     hi!
     <br>
     <br>
 </div>
-<div class="text">
+<div>
     I’m Rae Spiteri, a Maltese animator and illustrator based in 
     Netherlands, and I specialize in concept develpment and artistic direction. 
     I enjoy exploring surreal themes and the human experience through strange scenes 
@@ -97,11 +103,10 @@ containing their own intricacies
 mirroring the fragility of human consciousness. 
     <br><br>
 </div>  
-<div class="text">  
+<div>  
 bye!
     </div>
-
-
+</div>
 
 <div class="contact">
 want to contact me or keep up? <br>
@@ -110,7 +115,7 @@ want to contact me or keep up? <br>
     instagram: @bowtiesandpiranhas <br>
     Rotterdam, Netherlands <br>
     email: rachelspiteri2004@gmail.com
-   
+</div>
 </div>
 </body>
 </html>
