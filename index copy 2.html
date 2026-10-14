@@ -1,0 +1,155 @@
+<html>
+    <head>   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Jacquard+12&display=swap" rel="stylesheet">
+        <style>
+html {
+  height: 100vh;
+width:100vw
+}
+body {
+    background-image:url(portfolio/backgorund2.png);
+    min-height:100vh;
+    max-height: 100vh;
+    background-size: contain;
+    background-repeat:   no-repeat;
+    background-color: rgb(0, 0, 0);
+}
+
+a:link{color:inherit;
+text-decoration: none;}
+a:hover{color: hotpink;
+text-decoration: underline;}
+a:visited{color:inherit}
+
+a.rae:link {
+    text-decoration:underline
+}
+a.rae:hover {
+    text-decoration:none
+}
+.rae {
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: hotpink;
+    margin-left:60%;
+    position: absolute;
+    top: 15px;
+    letter-spacing: .2rem;
+    
+}
+.name:hover {
+   background-image: url('portfolio/design/title5.png');
+}
+.name {
+    background-image: url('portfolio/design/titlepink5.png');
+    width:40%;
+    background-size: contain;
+    height: 100px;
+    display:block;
+    background-repeat: no-repeat;
+}
+.namecontainer {
+    width:100%;
+    position:absolute;
+    top: 35%;
+    margin-left:60%
+}
+.sections {
+    color:white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    position:absolute;
+    top:60%;
+    margin-left:60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+}
+
+@media only screen and (max-width:600px){
+    body {
+background-image:url(portfolio/stage/curtainnarrowercrop.png);
+background-size:cover;
+background-attachment: fixed;
+}
+.rae {
+    font-size:4.5rem;
+    top:25px;
+    margin-left:60%;
+    letter-spacing:0em;
+}
+.sections {
+    font-size:1.3rem;
+    margin-left:60%
+}
+.namecontainer { 
+    position: absolute;
+    margin-left:55%;
+    top:40%
+}
+}
+
+@media  (max-width: 1024px) {
+    body {
+    background-image:url(portfolio/stage/curtain\ crop.png);
+    min-height :100dvh;
+    max-height:100dvh ;
+    max-width: 100dvw;
+    overflow-y: hidden;
+    background-size: contain;
+    }
+.rae {
+    font-size:4.5rem;
+    top:25px;
+    margin-left:60%;
+    letter-spacing:0em;
+}
+.sections {
+    position:absolute;
+    top:55%;
+    font-size:1.3rem;
+}  
+.namecontainer {
+    height: 4rem;
+    position:absolute;
+    top:35%;
+
+}
+
+}
+        </style>
+    </head>
+
+    <body>
+    <div class="rae">
+        <pre><a class=rae href="about.html"> 
+            
+        rae
+ spiteri
+</pre>
+
+    </a></pre> 
+    </div>
+        <div class="sections">
+            <div>
+                <br>
+                <a href="concepts.html">
+                    concept development.
+                </a>
+            </div>
+            <div style="margin-top:1rem; margin-bottom:1rem">
+                <a href="illustrations.html">
+                    illustration.
+                </a>
+            </div>
+            <div>
+                <a href="animation.html">
+                    animation.
+                </a>
+            </div>
+        </div>        
+</body>
+</html>
