@@ -12,72 +12,100 @@ body {
     background-size:     contain;
     background-position: left; 
     background-color: rgb(242, 223, 225);
+    max-height: 100%;
 } 
-.grid {
-        display:grid;
-    grid-template-columns: 3fr;
+        .topbar { 
+    display:flex;
+    direction:inline;
+    align-items: center;
 }
 .flex {
     display:flex;
     flex-direction: row;
     width:100%;
     justify-self:center;
-    padding-inline:3rem
+    margin-inline:3rem
+}
+.title {
+margin-left: 4rem;
+margin-top: 2rem;
+font-size: 5rem;
 }
 .me {
-    background-color: rgb(241, 159, 45);
-    height: 400px;
     object-fit: contain;
-    margin-inline:4rem
+    width:fit-content;
+    height: max-content;
+    justify-self: left;
+    margin-inline: 6rem;
+    padding-bottom: 2rem;
 }
 .img {
 height:600px;
 object-fit: contain;
 }
 .text {
-    width:40%;
-    margin-top:3rem;
+    width:30%;
+    margin-top:8rem;
     text-align:justify
 }
 .contact { 
-    margin-top: 50%;
+font-family: monospace;  
+padding-right: 8rem;
+align-self:flex-end;
+float: right;
+
 }
 
         @media only screen and (max-width:600px){
     body {
-max-width: 100vw;
+max-width: 100dvw;
 overflow-x: hidden;
 }
 .page {
 padding-top: 2rem;
 margin-inline:2rem
 }
+.title {
+    font-size: 4rem;
+    margin-inline:auto;
+    padding-right:4rem;
+    justify-self: center;
+    text-justify: center;
+}
 .flex {
     flex-direction: column;
-}
-.me {
-    justify-self: right;
 
 }
+.me {
+    margin-inline: auto;
+}
+.img {
+    height:400px;
+}
 .text {
-    width:100%;
-padding-left: 2rem;
+    width:80%;
+margin-inline: auto;
+margin-top:0rem
 }
         }
 </style>
     </head>
 <body>
-    <div class="grid">
+    <div class="topbar">
 <a href="index.html" class="back">
     <--
 </a>
-    <h1 class="title">
+    
+<h1 class="title">
 (about)
   </h1>
-<div class="flex"> 
+</div>
+<div class="flex">     
+
     <div class="me">
     <img src="portfolio/raeglow.png" class="img">
     </div>
+
 
 <div class="text">
 <div>
@@ -103,19 +131,22 @@ containing their own intricacies
 mirroring the fragility of human consciousness. 
     <br><br>
 </div>  
-<div>  
-bye!
-    </div>
+
 </div>
+
+
 
 <div class="contact">
 want to contact me or keep up? <br>
 <br>
 
-    instagram: @bowtiesandpiranhas <br>
-    Rotterdam, Netherlands <br>
-    email: rachelspiteri2004@gmail.com
+<a href="https://www.instagram.com/bowtiesandpiranhas/">
+instagram: @bowtiesandpiranhas <br>
+</a>      
+<a href="mailto:rachelspiteri2004@gmail.com">
+email: rachelspiteri2004@gmail.com
+</a>   
 </div>
-</div>
+
 </body>
 </html>
