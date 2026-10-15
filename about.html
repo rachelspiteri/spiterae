@@ -55,7 +55,15 @@ align-self:flex-end;
 float: right;
 
 }
-
+a:link {
+    color: hotpink;
+}
+a:hover {
+    text-decoration: none;
+}
+a:visited {
+    color:hotpink ;
+}
         @media only screen and (max-width:600px){
     body {
 max-width: 100dvw;
@@ -78,16 +86,67 @@ margin-inline:2rem
 }
 .me {
     margin-inline: auto;
+    justify-self: center;
 }
 .img {
-    height:400px;
+    height:600px;
 }
 .text {
     width:80%;
 margin-inline: auto;
 margin-top:0rem
 }
+.contact {
+    justify-self: center;
+    float: none;
+    align-self: center;
+    padding-left: 3rem;
+}
         }
+@media  (max-width: 1024px) {
+.page {
+padding-top: 2rem;
+margin-inline:2rem
+}
+.title {
+    font-size: 4rem;
+    margin-inline:auto;
+    padding-right:4rem;
+    justify-self: center;
+    text-justify: center;
+}
+.flex {
+    flex-direction: column;
+
+}
+.me {
+    margin-inline: auto;
+    padding-top: 3rem;
+    justify-self: center;
+}
+.img {
+    height:600px;
+}
+.text {
+    width:80%;
+margin-inline: auto;
+margin-top:0rem;
+font-size: 1.3rem;
+}
+.contact {
+    justify-self: center;
+    text-align: center;
+    line-height: 1.2;
+    float: none;
+    align-self: center;
+    padding-right: none;
+    padding-left: 8rem;
+    margin-top: 4rem;
+    margin-bottom:4rem;
+    font-size: 1.3rem;
+}
+
+}
 </style>
     </head>
 <body>
@@ -105,7 +164,6 @@ margin-top:0rem
     <div class="me">
     <img src="portfolio/raeglow.png" class="img">
     </div>
-
 
 <div class="text">
 <div>
@@ -134,17 +192,18 @@ mirroring the fragility of human consciousness.
 
 </div>
 
-
-
 <div class="contact">
 want to contact me or keep up? <br>
 <br>
 
 <a href="https://www.instagram.com/bowtiesandpiranhas/">
-instagram: @bowtiesandpiranhas <br>
+<u>instagram:</u> 
+@bowtiesandpiranhas 
+<br>
 </a>      
 <a href="mailto:rachelspiteri2004@gmail.com">
-email: rachelspiteri2004@gmail.com
+<u>email:</u> 
+rachelspiteri2004@gmail.com
 </a>   
 </div>
 
