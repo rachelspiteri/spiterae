@@ -12,7 +12,17 @@
             min-width: 100%;
             max-width:100%;
         }
-        
+        .topbar {
+            display:flex;
+            width:100%;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .projecttitle {
+            justify-self:right;
+            margin-top:1rem;
+            margin-right:2rem
+        }  
         .contents {
             max-width: 100%;
             min-width: 80%;
@@ -34,10 +44,6 @@
             height: 100%;
             object-fit: cover;
             margin-top: 1rem;
-        }
-        .projecttitle {
-            justify-self:end;
-            margin-right:4.2rem
         }
         .text {
             width:40%;
@@ -95,6 +101,7 @@
     </head>    
     <body>
 <page>
+<div class="topbar">
     <div>
 <a href="animation.html" class="back">
     <-- (<u>animation</u>)
@@ -104,7 +111,10 @@
     <-- (<u>conceptdevelopment</u>)
 </a>
 </div>
-
+   <div class="projecttitle">            
+              end of world (2024)
+    </div>   
+</div>
 <div class="contents">
     <div class="center">
         <iframe class=movie title="vimeo-player" 
@@ -113,9 +123,7 @@
         </iframe>
         </div>
             <br>
-   <div class="projecttitle">            
-              end of world (2024)
-    </div>            
+         
    <p class="text">
   <i> A cryptic creature with a cryptic message. </i> 
     <br><br>

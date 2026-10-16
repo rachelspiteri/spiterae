@@ -19,9 +19,16 @@
             object-fit:contain; 
             align-content: center;
         }
+        .topbar {
+            display:flex;
+            width:100%;
+            justify-content: space-between;
+            
+        }
         .projecttitle {
-            justify-self:end;
-            margin-right:4.2rem
+            justify-self:right;
+            margin-top:1rem;
+            margin-right:2rem
         }
         .text {
             width:60%;
@@ -40,7 +47,7 @@
             display:block;
             object-fit: cover;
             aspect-ratio:16/9;
-            width:90%;
+            width:85%;
             justify-self: center;
         }
         .movie {
@@ -66,7 +73,7 @@
             .img {
         object-fit:contain;
         margin-inline: 1rem;
-        height:50vh
+        height:70vh
     }
         .image {
             width:90%;
@@ -84,6 +91,7 @@
             justify-content: space-around;
             height: min-content;
             max-width:100%; 
+            margin-bottom:1rem
         }
 
         .scroll ::-webkit-scrollbar {
@@ -124,7 +132,8 @@
      </style> 
     </head>    
     <body>
-    <div>
+<div class="topbar">
+<div>
 <a href="animation.html" class="back">
     <-- (<u>animation</u>)
 </a>
@@ -133,6 +142,11 @@
     <-- (<u>conceptdevelopment</u>)
 </a>
 </div>
+    <div class="projecttitle">  
+    organic matter (2024)
+    </div>
+</div>
+
     <div class="contents">
     <div class="center">
 <iframe title="vimeo-player" class=movie
@@ -141,9 +155,7 @@ allowfullscreen>
 </iframe>
     </div>  
  <br> 
-    <div class="projecttitle">  
-    organic matter (2024)
-    </div>
+
 
     <p class="text">
 This animation deals with themes of loss and grief 
@@ -177,12 +189,12 @@ I want to reject the idea of solitude in death.
 <img src="portfolio/organic matter/cdompaint4.png" class="img">
 <img src="portfolio/organic matter/cdompoem2.png" class="img">
 </div> 
-<div>     
-<img src="portfolio/organic matter/cdomcolours.JPG" alt="colour schemes" class="image">
-<img src="portfolio/organic matter/cdomstoryboard.2.jpg" alt="colour schemes" class="image">
-<img src="portfolio/organic matter/cdomstoryboard.1.jpg" alt="colour schemes" class="image">
-<img src="portfolio/organic matter/cdomstoryboard1.jpg" alt="colour schemes" class="image">
-<img src="portfolio/organic matter/cdomvisuals.png" alt="visuals" class="image">
+<div class="scroll">     
+<img src="portfolio/organic matter/cdomcolours.JPG" alt="colour schemes" class="img">
+<img src="portfolio/organic matter/cdomstoryboard.2.jpg" alt="colour schemes" class="img">
+<img src="portfolio/organic matter/cdomstoryboard.1.jpg" alt="colour schemes" class="img">
+<img src="portfolio/organic matter/cdomvisuals.png" alt="visuals" class="img">
+<img src="portfolio/organic matter/cdomstoryboard1.jpg" alt="colour schemes" class="img">
 </div>
 </div>
     </body>

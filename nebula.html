@@ -12,6 +12,17 @@
             min-width: 100%;
             max-width:100%
         }
+                .topbar {
+            display:flex;
+            width:100%;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .projecttitle {
+            justify-self:right;
+            margin-top:1rem;
+            margin-right:2rem
+        }  
         .contents {
             max-width: 100%;
             min-width: 80%;
@@ -34,10 +45,7 @@
             object-fit: cover;
             margin-top: 1rem;
         }
-        .projecttitle {
-            justify-self:end;
-            margin-right:4.2rem
-        }
+
         .text {
             width:40%;
             margin-left:4.2rem;
@@ -59,7 +67,8 @@
 
         a.back:link{
         text-decoration:none ;
-        font-size:1.3rem
+        font-size:1.3rem;
+        padding-top:1rem
         }
 
 
@@ -94,12 +103,17 @@
     </style> 
     </head>    
     <body>
+<div class="topbar">
     <div class="back">
     <a href="animation.html" class="back">
         <-- (<u>animation</u>)
     </a>
     </div>
-    
+   <div class="projecttitle"> 
+        nebula (2024)
+    </div>    
+</div>    
+
 <div class="contents">
     <div class="center">
 <iframe class=movie title="vimeo-player" 
@@ -108,9 +122,7 @@ src="https://player.vimeo.com/video/1233517700?badge=0&amp;autopause=0&amp;playe
         </script>  
     </div>
     <br>
-   <div class="projecttitle"> 
-        nebula (2024)
-    </div>    
+
     <div class="text">
 As our first animation assignment we were tasked to 
 create a soundscape with an abstract animation to go 
@@ -120,6 +132,16 @@ abstract art and this project was a great way to express that.
 I draw a lot of inspiration from organic shapes and forms.
 As the animation naturally developed I began to associate it with space and stars (hence the name). 
     </div>
+
+<div class="scroll">
+    <img src="portfolio/abstract/IMG_1197 2.png" class=image>
+    <img src="portfolio/abstract/IMG_0774.png" class=image>
+    <img src="portfolio/abstract/IMG_1188.png" class=image>
+    <img src="portfolio/abstract/IMG_1195.png" class=image>
+    <img src="portfolio/abstract/IMG_1189 2.png" class=image>
+<img src="portfolio/abstract/IMG_1196 2.png" class=image>
+<img src="portfolio/abstract/IMG_2371.png" class=image>
+</div>
         </div>
     </body>
 </html>
