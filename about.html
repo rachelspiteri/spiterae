@@ -13,6 +13,7 @@ body {
     background-position: left; 
     background-color: rgb(242, 223, 225);
     max-height: 100%;
+    margin-inline: 0;
 } 
         .topbar { 
     display:flex;
@@ -24,7 +25,7 @@ body {
     flex-direction: row;
     width:100%;
     justify-self:center;
-    margin-inline:3rem
+    padding-inline:3rem
 }
 .title {
 margin-left: 4rem;
@@ -87,15 +88,14 @@ margin-inline:2rem
 .me {
     margin-inline: auto;
     justify-self: center;
+}
+.img {
+    min-height:600px;
     width:75dvw;
     height:fit-content
 }
-.img {
-    height:600px;
-}
 .text {
     width:85%;
-margin-inline:none;
 margin-top:0rem;
 align-self:center
 }
@@ -120,6 +120,7 @@ margin-inline:2rem
 }
 .flex {
     flex-direction: column;
+    justify-items: center;
 }
 .me {
     margin-inline: auto;
@@ -131,7 +132,7 @@ margin-inline:2rem
 }
 .text {
     width:85%;
-margin-inline: none;
+margin-inline: auto;
 margin-top:0rem;
 font-size: 1.6rem;
 }
