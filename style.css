@@ -11,13 +11,14 @@ width: 100%;
 overflow-x: hidden;
 }
 
+
 .title {
     font-family:"Jacquard 12", system-ui;
     color:rgba(11, 17, 8, 0.513);
     justify-self: center;
     font-size: 7rem;
     margin-top: 0rem;
-    margin-bottom:1.6rem;
+    margin-bottom:1rem;
     text-align: center;
 }
 .projecttitle {
@@ -42,7 +43,6 @@ overflow-x: hidden;
         display: none;
         }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
 .coral-pixels-regular {
   font-family: "Coral Pixels", serif;
@@ -61,8 +61,9 @@ overflow-x: hidden;
 }
 a.back:any-link {
     text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:hotpink;
-    margin-left:.7rem;
+    margin-left:2.5rem;
     font-size: 2.5rem;
 } 
 a.back:hover {
@@ -87,15 +88,16 @@ a:visited{color:inherit}
     .title {
         font-size: 6rem;
     }
-    a.back {
-        font-size:2rem;
-    }
-}
+
 
 @media  (min-width: 1024px) {
 .topbar { 
     display:flex;
     direction:inline;
+}
+    a.back:any-link {
+        font-size:4rem;
+    }
 }
 .title {
     margin-inline:auto
