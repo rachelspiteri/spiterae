@@ -12,21 +12,29 @@
             min-width: 100%;
             max-width:100%
         }
-        .page {
-            max-width: 100%;
-            padding: 5%;   
-            display: block;
-            object-fit:contain; 
+        .topbar {
+            display:flex;
+            width:100%;
+            justify-content: space-between;
             align-content: center;
         }
         .projecttitle {
-            justify-self:end;
-            margin-right:4.2rem
-        }
+            justify-self:right;
+            margin-top:1rem;
+            margin-right:2rem
+        }  
+        
+        .page {
+            max-width: 100%;
+            padding-inline:2rem;   
+            display: block;
+            object-fit:contain; 
+            align-content: center;
+        }        
         .text {
-            width:60%;
-            margin-left:4.2rem;
-            font-size:1.3rem
+            width:65%;
+            margin-left:0rem;
+            font-size:1.2rem
         }
         .contents {
             max-width: 100%;
@@ -43,12 +51,6 @@
             width:90%;
             justify-self: center;
         }
-        .movie {
-            width:100%  ;  
-            height: 100%;
-            object-fit: cover;
-            margin-top: 1rem;
-        }
         .scrol {
             display: flex;
             flex-wrap: nowrap;
@@ -60,7 +62,7 @@
             .imag{
         height: 90%;
         padding-inline: 1rem;
-        height:30rem;
+        height:60vh;
         object-fit:scale-down
         }
             .img {
@@ -85,12 +87,14 @@
             height: min-content;
             max-width:100%; 
             margin-bottom: 2rem;
+            margin-top:.3rem
         }
 
         .scroll ::-webkit-scrollbar {
             display: none;
         }
-        a.back:link{
+        a.back:any-link{
+        margin-left:1rem;
         text-decoration:none ;
         font-size:1.3rem
         }
@@ -125,41 +129,45 @@
      </style> 
     </head>    
     <body>
+<div class="topbar">
     <div>
-<a href="animation.html" class="back">
-    <-- (<u>animation</u>)
-</a>
-<br>
+
 <a href="concepts.html"class="back">
     <-- (<u>conceptdevelopment</u>)
 </a>
 </div>
-    <div class="contents">
- <br> 
+
     <div class="projecttitle">  
     creature feature
     </div>
-
+</div>
 
 </div>
     <div class="page">
  <div class="scroll">
-<img src="portfolio/theatre/theatrecurtain.JPG" class="img">
-<img src="portfolio/theatre/stagebeads.JPG" class="img">
-<img src="portfolio/theatre/theatre7.JPG" class="img">
-<img src="portfolio/theatre/stagecurtainlit.JPG" class="img">
-<img src="portfolio/theatre/theatre2.JPG" class="img">
+<img src="portfolio/theatre/theatrecurtain.JPG" class="imag">
+<img src="portfolio/theatre/stagebeads.JPG" class="imag">
+<img src="portfolio/theatre/theatre7.JPG" class="imag">
+<img src="portfolio/theatre/stagecurtainlit.JPG" class="imag">
+<img src="portfolio/theatre/theatre2.JPG" class="imag">
 </div> 
-    <p class="text">
-the stage is open come and watch! <br> <br>
-
-creature feature is a portable box stage I created using scrapped materials and ceramics.
-besides serving as a stand-alone piece, ordaned with reliefs and ribbons,</p> 
+    <p class="text" style="text-justify: center;" >
+<i>
+    the stage is open, come and watch! 
+</i>       
+<br> <br>
+</p>
+<p class="text" >
+Creature Feature is where forest dwellers and animals deep in the burrow gather for a show, and try to please the Humans in the process. 
+<br>
+I created this portable box theatre using scrapped materials and ceramics.
+besides serving as a stand-alone piece, ordained with reliefs and ribbons, it will serve as a stage and backdrop for future performances by the featured creatures.</p> 
      <div class="scroll">
-<img src="portfolio/theatre/materials.jpeg" class="img">
+
 <img src="portfolio/theatre/stagedig.JPG" class="img">
-<img src="portfolio/theatre/jester.JPG" class="img">
+<img src="portfolio/theatre/materials.jpeg" class="img">
 <img src="portfolio/theatre/stagedig2.JPG" class="img">
+<img src="portfolio/theatre/jester.JPG" class="img">
 <img src="portfolio/theatre/theatreprocess.JPG" class="img">
 <img src="portfolio/theatre/mice.JPG" class="img">
 
