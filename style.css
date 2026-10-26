@@ -10,8 +10,14 @@ background-size: contain;
 width: 100%;
 overflow-x: hidden;
 }
-
-
+.topbar {
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+        align-content: center;
+        padding-right:2rem;
+        margin-top:1rem;
+}
 .title {
     font-family:"Jacquard 12", system-ui;
     color:rgba(11, 17, 8, 0.513);
@@ -27,8 +33,30 @@ overflow-x: hidden;
     font-size: 2rem;
     padding-left:2rem
 }
+.header {
+            font-size: 1.6rem;
+            font-family:"luxurious roman";
+            text-justify:center;
+            justify-self:center;
+            justify-content:center;
+            margin-inline:auto
+}
 .text {
     font-family: monospace;
+}
+.icon {
+    height:2.5rem;
+    width:2.5rem;
+    object-fit: contain;
+}
+
+.bottom {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline:3rem;
+    margin-bottom:2rem
+
 }
 .scroll {
     scrollbar-width: none;
@@ -54,6 +82,31 @@ overflow-x: hidden;
   font-weight: 400;
   font-style: normal;
 }
+.luxurious-roman-regular {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.aref-ruqaa-ink-regular {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.aref-ruqaa-ink-bold {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .centre {
     display: flex;
@@ -63,14 +116,21 @@ a.back:any-link {
     text-decoration: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:hotpink;
-    margin-left:2.5rem;
-    font-size: 2.5rem;
-} 
+    margin-left:.3rem;
+    font-size:2rem
+}
 a.back:hover {
     text-decoration: underline;
     color:rgba(255, 255, 255, 0)
 }
-
+a.icon:any-link {
+    text-decoration: none;
+}
+a.icon:hover {
+    text-decoration: none;
+    height:120%;
+    width:auto
+}
 a:link{color:inherit}
 a:hover{color: hotpink;}
 a:visited{color:inherit}
