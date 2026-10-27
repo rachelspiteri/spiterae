@@ -132,6 +132,14 @@ a.icon:hover {
     height:120%;
     width:auto
 }
+ a.menu:any-link {
+            font-size:1.3rem;
+            color: hotpink;
+            text-decoration:none
+        }
+a.menu:hover {
+    text-decoration:underline
+}
 a:link{color:inherit}
 a:hover{color: hotpink;}
 a:visited{color:inherit}
