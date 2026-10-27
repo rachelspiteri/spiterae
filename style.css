@@ -55,7 +55,8 @@ overflow-x: hidden;
     justify-content: space-between;
     align-items: center;
     margin-inline:3rem;
-    margin-bottom:2rem
+    margin-bottom:2rem;
+    align-self:center
 
 }
 .scroll {
@@ -143,7 +144,9 @@ a:visited{color:inherit}
 
 @media  (max-width: 1024px) {
 .body {
-    max-width:100dvw
+   width:100lvw;
+    margin-inline: 0%;
+    
 }
     .title {
         font-size: 6rem;
