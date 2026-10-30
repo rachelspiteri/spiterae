@@ -1,0 +1,198 @@
+<html>
+    <head>   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Jacquard+12&display=swap" rel="stylesheet">
+        <style>
+html {
+  height: 100vh;
+  max-height:100vh;
+  overflow-y: hidden;
+width:100vw
+}
+body {
+    background-image:url(portfolio/backgorund2.png);
+    min-height:100vh;
+    max-height: 100vh;
+    background-size: contain;
+    background-repeat:   no-repeat;
+    background-color: rgb(0, 0, 0);
+}
+
+a:link{color:inherit;
+text-decoration: none;}
+a:hover{color: hotpink;
+text-decoration: underline;}
+a:visited{color:inherit}
+
+a.rae:link {
+    text-decoration:underline
+}
+a.rae:hover {
+    text-decoration:none
+}
+.rae {
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: hotpink;
+    margin-left:55%;
+    position: absolute;
+    top: 22%;
+    letter-spacing: .4rem;
+    text-align:right
+}
+.name:hover {
+   background-image: url('portfolio/design/title5.png');
+}
+.name {
+    background-image: url('portfolio/design/titlepink5.png');
+    width:40%;
+    background-size: contain;
+    height: 100px;
+    display:block;
+    background-repeat: no-repeat;
+}
+.namecontainer {
+    width:100%;
+    position:absolute;
+    top: 35%;
+    margin-left:60%
+}
+.sections {
+    color:white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    position:absolute;
+    top:60%;
+    margin-left:55%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+    text-align: right;
+}
+
+.images {
+    width:80px;
+    display:flex;
+    flex-direction:column;
+    column-gap: 3rem;
+    position:absolute;
+    margin-left:80%
+}
+.img1{
+    object-fit:cover;
+    overflow:none;
+    width:200px;
+    height:120px;
+    margin-bottom:3rem;
+    align-content: center;
+}
+.img2{
+    object-fit:cover;
+    overflow:none;
+    width:200px;
+    height:200px;
+    margin-bottom:3rem;
+    align-content: center;
+}
+.img3{
+    object-fit:cover;
+    overflow:none;
+    width:200px;
+    height:300px;
+    margin-bottom:3rem;
+    align-content: center;
+}
+@media only screen and (max-width:600px){
+    body {
+background-image:url(portfolio/curtainportrait.png);
+background-size:cover;
+background-attachment: fixed;
+background-position: right;
+}
+.rae {
+    font-size:9rem;
+    top:35%;
+    margin-left:55%;
+    letter-spacing:0em;
+}
+.sections {
+    font-size:2.6rem;
+    margin-left:55%
+}
+.namecontainer { 
+    position: absolute;
+    margin-left:55%;
+    top:40%
+}
+}
+
+@media  (max-width: 1024px) {
+    body {
+    background-image:url(curtain.png);
+    min-height :100lvh;
+    max-height:100lvh ;
+    max-width: 100dvw;
+    overflow-y: hidden;
+    background-size: cover;
+    background-position: right;
+    margin:0
+    }
+.rae {
+    font-size:9rem;
+    top:30%;
+    margin-left:55%;
+    letter-spacing:0em;
+}
+.sections {
+    position:absolute;
+    top:55%;
+    font-size:2.6rem;
+    margin-left:55%
+}  
+.namecontainer {
+    height: 4rem;
+    position:absolute;
+    top:35%;
+}
+}
+        </style>
+    </head>
+
+    <body>
+     <div class="left">
+    <div class="rae">
+<a class=rae href="about.html">
+    rae <br>
+spiteri
+</pre>
+
+    </a>
+    </div>
+        <div class="sections">
+            <div>
+                <br>
+                <a href="concepts.html">
+                    concept development.
+                </a>
+            </div>
+           <div style="margin-top:1rem; margin-bottom:1rem">
+                <a href="animation.html">
+                    animation.
+                </a>
+            </div>
+            <div>
+                <a href="illustrations.html">
+                    illustration.
+                </a>
+            </div>
+         </div>       
+    </div>       
+    <div class="images">
+<img src="portfolio/design/Scan 38 copy.jpeg" class="img1">
+<img src="portfolio/clips/dotani-croplong.gif"class="img2"> 
+<img src="portfolio/design/moulding.png"class="img3">
+    </div>
+</body>
+</html>
