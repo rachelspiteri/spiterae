@@ -1,0 +1,21 @@
+/Applications/krita.app/Contents/MacOS/ffmpeg -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i /Users/rache1/Desktop/website/portfolio/design/frame%04d.png -i /Users/rache1/Desktop/website/portfolio/design/KritaTempPalettegen_%06d.png -lavfi [0:v][1:v]paletteuse=dither=sierra2_4a:diff_mode=none -f gif -loop 0 -gifflags +transdiff /Users/rache1/Desktop/website/portfolio/design/sketchbook.gif
+=====================================================
+Input #0, image2, from '/Users/rache1/Desktop/website/portfolio/design/frame%04d.png':
+  Duration: 00:00:02.92, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 1382x994 [SAR 2834:2834 DAR 691:497], 25 fps, 25 tbr, 25 tbn
+Input #1, image2, from '/Users/rache1/Desktop/website/portfolio/design/KritaTempPalettegen_%06d.png':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc, gbr/unknown/unknown), 16x16 [SAR 1:1 DAR 1:1], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse
+  Stream #1:0 (png) -> paletteuse
+  paletteuse:default -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+Output #0, gif, to '/Users/rache1/Desktop/website/portfolio/design/sketchbook.gif':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 1382x994 [SAR 1:1 DAR 691:497], q=2-31, 200 kb/s, 24 fps, 100 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 gif
+frame=    5 fps=0.0 q=-0.0 size=     256KiB time=00:00:00.20 bitrate=10066.3kbits/s speed=0.413x    frame=   12 fps= 12 q=-0.0 size=     256KiB time=00:00:00.50 bitrate=4194.3kbits/s speed=0.495x    frame=   20 fps= 13 q=-0.0 size=     256KiB time=00:00:00.83 bitrate=2516.6kbits/s speed=0.55x    frame=   28 fps= 14 q=-0.0 size=    1024KiB time=00:00:01.16 bitrate=7190.2kbits/s speed=0.578x    frame=   36 fps= 14 q=-0.0 size=    1024KiB time=00:00:01.50 bitrate=5592.4kbits/s speed=0.594x    frame=   42 fps= 14 q=-0.0 size=    1536KiB time=00:00:01.75 bitrate=7190.2kbits/s speed=0.578x    frame=   48 fps= 14 q=-0.0 size=    1536KiB time=00:00:02.00 bitrate=6291.5kbits/s speed=0.566x    frame=   55 fps= 14 q=-0.0 size=    1536KiB time=00:00:02.29 bitrate=5490.7kbits/s speed=0.567x    frame=   62 fps= 14 q=-0.0 size=    2560KiB time=00:00:02.58 bitrate=8118.0kbits/s speed=0.569x    frame=   70 fps= 14 q=-0.0 size=    2560KiB time=00:00:02.91 bitrate=7190.2kbits/s speed=0.578x    [out#0/gif @ 0x11b6044c0] video:2638KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000740%
+frame=   73 fps= 14 q=-0.0 Lsize=    2638KiB time=00:00:03.04 bitrate=7105.7kbits/s speed=0.578x    

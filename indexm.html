@@ -5,13 +5,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Jacquard+12&display=swap" rel="stylesheet">
         <style>
-
 html {
   height: 100vh;
-  max-height:100vh;
-  overflow-y: hidden;
-    width:100vw;
-        scrollbar-width: 0;
+width:100vw
 }
 body {
     background-image:url(portfolio/backgorund2.png);
@@ -20,8 +16,8 @@ body {
     background-size: contain;
     background-repeat:   no-repeat;
     background-color: rgb(0, 0, 0);
-    scrollbar-width: 0;
 }
+
 a:link{color:inherit;
 text-decoration: none;}
 a:hover{color: hotpink;
@@ -38,11 +34,22 @@ a.rae:hover {
     font-size: 6rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: hotpink;
-    margin-left:55%;
+    margin-left:60%;
     position: absolute;
-    top: 22%;
+    top: 25%;
     letter-spacing: .4rem;
-    text-align:right
+    
+}
+.name:hover {
+   background-image: url('portfolio/design/title5.png');
+}
+.name {
+    background-image: url('portfolio/design/titlepink5.png');
+    width:40%;
+    background-size: contain;
+    height: 100px;
+    display:block;
+    background-repeat: no-repeat;
 }
 .namecontainer {
     width:100%;
@@ -56,80 +63,10 @@ a.rae:hover {
     font-family: sans-serif;
     position:absolute;
     top:60%;
-    margin-left:55%;
+    margin-left:60%;
     display: flex;
     flex-direction: column;
     row-gap: .3rem;
-    text-align: right;
-}
-.block {
-wrap
-}
-.textappear {
-align-self:center;
-opacity:0;
-color:white
-}
-.textappear:hover {
-    opacity:1
-}
-.images {
-    width:80px;
-    display:flex;
-    flex-direction:row;
-    row-gap: 4rem;
-    position:absolute;
-    margin-left:80%;
-    height:100vh;
-    align-items: center;
-}
-.img1{
-    object-fit:cover;
-    overflow:none;
-    width:auto;
-    height:60vh;
-    margin-bottom:3rem;
-    align-content: center;
-     transform: perspective(1000px) rotatey(-10deg);
-    margin-inline:4rem
-}
-.img1:hover {
-opacity:.7;
-background-color: black;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-     transform: none;
-    margin-inline:4rem}
-.img2{
-    object-fit:cover;
-    overflow:none;
-    width:auto;
-    height:60vh;
-    margin-bottom:3rem;
-    align-content: center;
-    transform: perspective(1000px) rotatey(-10deg);
-    margin-inline:4rem
-}
-.img2:hover {
-opacity:.7;
-background-color: black;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-transform: none;
-}
-.img3{
-    object-fit:cover;
-    overflow:none;
-    width:auto;
-    height:60vh;
-    margin-bottom:3rem;
-    align-content: center;
-    transform: perspective(1000px) rotatey(-10deg);
-    margin-inline:4rem
-}
-.img3:hover {
-opacity:.7;
-background-color: black;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-transform: none;
 }
 
 @media only screen and (max-width:600px){
@@ -189,23 +126,22 @@ background-position: right;
     </head>
 
     <body>
- <div class="back">    
-<div class=left>
     <div class="rae">
-        <a href="about.html" class="rae"> 
-            rae <br>
-            spiteri
-        </a> 
-        </div>
-        <div class="sections">
+        <pre><a class=rae href="about.html">rae
+spiteri
+</pre>
 
+    </a></pre> 
+    </div>
+        <div class="sections">
             <div>
+                <br>
                 <a href="concepts.html">
                     concept development.
                 </a>
-            </div> 
-                         <div>    
-              <a href="illustrations.html">
+            </div>
+            <div style="margin-top:1rem; margin-bottom:1rem">
+                <a href="illustrations.html">
                     illustration.
                 </a>
             </div>
@@ -214,18 +150,6 @@ background-position: right;
                     animation.
                 </a>
             </div>
-
         </div>        
-    </div>   
-    <div class="images">
-<div class="block">    
-<img src="portfolio/clips/dotani-croplong.gif"class="img2"> 
-<div class=textappear>
-    animation
-    </div>
-</div>
-<img src="portfolio/design/Scan 38 copy.jpeg" class="img1">
-<img src="portfolio/design/jpourneyani.gif"class="img3">
-    </div>
 </body>
 </html>
