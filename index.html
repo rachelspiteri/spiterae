@@ -11,7 +11,7 @@ html {
   max-height:100vh;
   overflow-y: hidden;
     width:100vw;
-        scrollbar-width: 0;
+    scrollbar-width: 0;
 }
 body {
     background-image:url(portfolio/backgorund2.png);
@@ -22,6 +22,9 @@ body {
     background-color: rgb(0, 0, 0);
     scrollbar-width: 0;
     
+}
+.body::-webkit-scrollbar {
+  display: none;
 }
 a:link{color:inherit;
 text-decoration: none;}
@@ -45,12 +48,7 @@ a.rae:hover {
     letter-spacing: .4rem;
     text-align:right
 }
-.namecontainer {
-    width:100%;
-    position:absolute;
-    top: 35%;
-    margin-left:60%
-}
+
 .sections {
     color:white;
     font-size: 2rem;
@@ -139,70 +137,56 @@ transform: none;
 @media only screen and (max-width:600px){
     body {
 background-image:url(portfolio/curtainportrait.png);
-background-size:cover;
-background-attachment: fixed;
-background-position: right;
 }
 .rae {
     font-size:9rem;
     top:35%;
-    margin-left:55%;
+    margin-left:45%;
     letter-spacing:0em;
 }
 .sections {
     font-size:2.6rem;
     margin-left:55%
 }
-.namecontainer { 
-    position: absolute;
-    margin-left:55%;
-    top:40%
-}
 }
 
 @media  (max-width: 1024px) {
+
+body {
+    background-image:url(portfolio/backgorund2.png);
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    scrollbar-width: 0;
+}
     body {
-    background-image:url(curtain.png);
+   /*background-image:url(curtain.png);*/
+    background-size: cover;
     min-height :100lvh;
     max-height:100lvh ;
-    max-width: 100dvw;
     overflow-y: hidden;
-    background-size: cover;
+    overflow-x: scroll;
     background-position: right;
     margin:0
     }
 .rae {
     font-size:9rem;
-    top:30%;
-    margin-left:55%;
+    top:35%;
+    margin-left:20%;
     letter-spacing:0em;
 }
 .sections {
     position:absolute;
     top:55%;
     font-size:2.6rem;
-    margin-left:55%
+    margin-left:25%
 }  
-.namecontainer {
-    height: 4rem;
-    position:absolute;
-    top:35%;
+
+.images{
+    position:relative;
+
 }
 }
         </style>
-<script>
-  const video = document.querySelector('.img3');
-
-video.addEventListener('mouseover', function () {
-    this.play();
-});
-
-video.addEventListener('mouseout', function () {
-    this.pause();
-    this.currentTime = 0;
-});
-
-</script>
     </head>
 
     <body>
@@ -246,30 +230,33 @@ animation.
 </div>
 
 <div class="block">
-<a href="illustrations.html">
+<a href="illustrations.html#zoom">
   <img src="portfolio/design/jpourneyani.gif"class="img3">
  <div class="header">
                  illustration.  
  </div> 
                 </a>
 </div> 
-<div class=block>
-        <a href="concepts.html">
-<img src="portfolio/design/sketchbook.gif" class="img1">
- <div class=header>   
-               concept development.
-</div>                  
-   </a>
-</div>
+
 <div class="block">    
-     <a href="animation.html">
+     <a href="endofworld.html">
 
 <img src="portfolio/design/eowclip.gif"class="img2"> 
 <div class=header>
-animation.
+        end of world.
 </div>
      </a>   
 </div>  
+
+<div class=block>
+        <a href="poem.html">
+    <img src="portfolio/design/sketchbook.gif" class="img1">
+ <div class=header>   
+        because i could not stop for death.
+</div>                  
+   </a>
+</div>
+
        </div>
 </body>
 </html>

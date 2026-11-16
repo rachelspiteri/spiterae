@@ -18,9 +18,10 @@
         .page {
             min-width: 80%;
             max-width: 100%;
-            padding-inline: 2rem;
+            /*
+            padding-inline: 2rem;*/
             padding-top:3rem;
-            padding-bottom: 2rem;
+          
             margin-bottom:1.5rem;
             margin-inline: 3rem;
             display: block;
@@ -32,22 +33,35 @@
         }
         .topbar { 
             display:flex;
-            direction:inline;
+            direction:flex;
             align-items: center;
         }
         .title {
             margin-inline:auto
         }
-            .text {
-        width:100%;
-        font-size:1.8rem;
-        background-color:rgb(79, 45, 71) ;
-        color: rgba(240, 248, 255, 0.812);
-        text-align: center;
-        padding-top: 1.3rem;
-        letter-spacing:.2rem;
-        padding-bottom: 2rem;
-        font-family:"luxurious roman";
+        .div {
+            color: rgba(240, 248, 255, 0.812);
+            background-color:none;
+            /*
+       padding-inline: 2rem;*/
+       overflow-x: scroll;
+       max-width:100%;
+       scrollbar-width: none;
+       
+        }
+        .div:hover {
+            color:hotpink;
+            background-color:rgb(79, 45, 71) ;
+        }
+        .text {
+            width:100%;
+            font-size:1.8rem;
+            background-color:rgb(79, 45, 71) ;
+            text-align: center;
+            padding-top: 1.3rem;
+            letter-spacing:.2rem;
+            padding-bottom: 2rem;
+            font-family:"luxurious roman";
         }
         .movie {
             max-width:100%;
@@ -70,52 +84,51 @@
         justify-content: space-around;
         object-fit: scale-down;
         margin-right:2rem;
-        padding-top: 1rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
-        gap:2rem
+        gap:2rem;
+        margin-inline:2rem
     }
-    @import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
 
-
-.gif {
+        .gif {
         max-height:70dvh;
         width:fit-content;
         
-}
+    }
         .gifs {display:flex;
-    direction:inline;
-    justify-content: center;
-    justify-self: center;
-    margin-inline:0; 
-    width:100%;
-    object-fit: contain;
-    margin-bottom:3rem
-}
+        direction:inline;
+        justify-content: center;
+        justify-self: center;
+        margin-inline:0; 
+        width:100%;
+        object-fit: contain;
+        margin-bottom:3rem
+    }
         .image {
         max-width: 100%;
         height: 90%;
         max-height:30rem;
         object-fit:scale-down
         }
-        a:link{color:inherit;
-        text-decoration:none}
+        a:link{
+            color:inherit;
+            text-decoration:none}
         a:hover{
             color: hotpink;
             text-decoration:none ;
         }
-a.back:any-link{
-    margin-left:.3rem;
-    font-size:2.4rem
-}
+        a.back:any-link{
+            margin-left:.3rem;
+            font-size:2.4rem
+        }
             @media only screen and (max-width:600px){
     body {
-max-width: 100vw;
+max-width: 100lvw;
 overflow-x: hidden;
 }
 .page {
 padding-top: 2rem;
-margin-inline:2rem
+margin-inline:none
 }
 .image {
     padding-left:0
@@ -133,7 +146,13 @@ margin-inline:2rem
 margin-inline: auto;
 }
             }
+
 @media  (max-width: 1024px) {
+
+    .page {
+padding-top: 2rem;
+margin-inline:none
+}
 .gifs{
     display: flex;
     flex-direction: column;
@@ -149,11 +168,9 @@ margin-inline: auto;
     margin-inline: auto;
 }
 }
-.gif {
-   
-        width:fit-content;
 
-}
+    @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 
      </style> 
     </head>    
@@ -181,22 +198,25 @@ margin-inline: auto;
    </div>
    
 
-    <div class="organicmatter">
-    <div class="stills">
+    <div class="div">
+     <a href="organicmatter.html">
+  <div class="stills">
         <img src="portfolio/organic matter/stillstairs.PNG"class="image">
         <img src="portfolio/organic matter/stillbugs.PNG"class="image">
         <img src="portfolio/organic matter/stillshadow.PNG"class="image">
         <img src="portfolio/organic matter/stilltop.PNG"class="image">
     </div>
 <div class="text">
-    <a href="organicmatter.html">
+
         an organic matter
-    </a> 
+
 </div> 
+    </a> 
     </div>
 
    <br>
-    <div class="endofworld">
+   <div class="div">
+        <a href="endofworld.html">
     <div class="stills">
         <img src="portfolio/end of world/stillface.JPG" class="image">        
         <img src="portfolio/end of world/stillscreen.JPG"class="image">
@@ -205,14 +225,17 @@ margin-inline: auto;
         <img src="portfolio/end of world/stillclosing.jpg" class="image">  
     </div>
     <div class="text">
-        <a href="endofworld.html">
+
               end of world
+
+    </div>
         </a>
     </div>
-    </div>
+
     <br>    
-    <div class="abstract">
-    <div class="stills">
+    <div class="div">
+        <a href="nebula.html">
+     <div class="stills">
         <img src="portfolio/abstract/still9.png"class="image">
         <img src="portfolio/abstract/still2.png"class="image">
         <img src="portfolio/abstract/still5.png"class="image">    
@@ -221,12 +244,15 @@ margin-inline: auto;
         <img src="portfolio/abstract/still7.png"class="image">
     </div>
         <div class="text">
-        <a href="nebula.html">
+
             nebula 
-        </a>
+    
     </div> 
+    </a>    
+</div>
+
     </div>
-    </div>
+
     <div class="bottom">
    <div>
  ©   rae spiteri 2026

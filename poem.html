@@ -12,14 +12,6 @@
             min-width: 100%;
             max-width:100%
         }
-        .page {
-            max-width: 100%;
-            min-width: 80%;
-            max-width: 100%;
-            margin-inline: 2rem;   
-            display: block;
-            object-fit:scale-down; 
-        }
         .topbar {
             display:flex;
             width:100%;
@@ -44,16 +36,27 @@
             margin-bottom: 5rem;
             justify-self:center
         }
+         .contents {
+            width: 100%;
+            padding-inline:1rem; 
+            display: block;
+            object-fit:contain; 
+            height:min-content;
+            justify-content:center ;
+            justify-self:center
+        }
         .center {
             display:block;
             object-fit: cover;
             aspect-ratio:16/9;
             width:85%;
             justify-self: center;
-            padding-bottom:2rem
+            justify-items:center;
+            padding-bottom:2rem;
+            margin-inline:auto
         }
         .movie {
-            width:100%  ;  
+            width:100% ;  
             height: 100%;
             object-fit: cover;
             margin-top: 1rem;
@@ -65,13 +68,19 @@
         }
         .images {
     max-height: 70lvh;
-    max-width: 25%;
     display: flex;
     overflow:hidden;
-    justify-content:space-around;
-    padding-right:5rem;
-    
-    }
+    row-gap: 2rem;
+    padding-right: 4rem;/**/
+    margin-right:3rem;
+    margin-inline:auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width:90%;
+    justify-self:center
+
+}
+
 .image {
     width:100%;
     object-fit:contain;
@@ -89,6 +98,7 @@
 .imge {
     object-fit:contain;
     width:50%;
+    padding-right:2rem
 
 }
 .flex {
@@ -129,7 +139,7 @@
 .long {
     margin-bottom:-40px;
     height: 90%; 
-    margin-inline: 2rem;
+    margin-left: 4rem;
 }
 .vertical {
     display:flex;
@@ -155,7 +165,43 @@
         text-decoration:none ;
         font-size:1.3rem
         }
-
+        @media  (max-width: 1024px) {
+            .center {
+                width:100%
+            }
+            .image {
+                max-width: 100vw;
+                height: min-content;
+                object-fit: contain;
+            }
+            .images {
+                padding-right:0rem;
+                padding-left:2rem
+            }
+            .long{
+                padding-left:2rem;
+            }
+            .longscroll{
+                padding-right:none;
+            }
+            .scroll {
+                height:min-content
+            }
+            .projecttitle {
+                font-size:2rem;
+                margin-right:0
+            }
+            .text {
+                margin: 0%;
+                margin-top:.6rem ;
+                width: 90%;
+                font-size:1.4rem;
+                justify-self: start;
+            }
+            a.back:link {
+                font-size:1.7rem;
+            }
+        }
      </style> 
     </head>   
 <body>
@@ -167,6 +213,7 @@
 'Because I could not stop for Death' (2024)
 </div>
 </div>
+<div class="contents">
 <div class="scrollsnap">
 <img src="portfolio/poem/poemink1.jpeg" class="imag">
 <img src="portfolio/poem/poemink2.jpeg" class="imag">
@@ -227,6 +274,7 @@ through experimentations with light and shadow in various mediums.
 </div>
 <div class="header">
     charcoal strip
+</div>
 </div>
 </div>
 <div class="bottom">

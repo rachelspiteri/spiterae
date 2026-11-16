@@ -7,20 +7,23 @@
      <style>
         .html {
             width: 100vw;
+            scrollbar-width: none;
        }
         .body {
             min-width: 100vw;
-            max-width: 100vw
+            max-width: 100vw;
+            justify-content: center;
         }
         .page {
-            min-width: 80%;
-            max-width: 100%;
-            margin-inline: 1rem;
+            width: 100%;
+            padding-inline:auto;
+            margin-inline: auto;
             margin-bottom:3rem;
             display: flex;
             flex-direction: column;
             object-fit:scale-down;  
-            justify-self: centre;
+            justify-self: center;
+            align-content:center;
             justify-content: center;
         }
         .topbar { 
@@ -81,13 +84,14 @@
             display:flex;
             width:100%;
             justify-content: center;
-            max-height:90%
+            max-height:90%;
+            justify-self:center
         }
         .imag { 
             width:30%;
         }
         .imagp {
-            width:35%;
+            width:30%;
             margin-inline:1rem
         }
 .zoom {
@@ -147,7 +151,7 @@ overflow-x: hidden;
 }
 
 .scroll {
-    margin-left:0rem;
+    margin-left:3rem;
     justify-content: space-evenly;
     width:90lvw
 }
@@ -187,7 +191,8 @@ overflow-x: hidden;
     object-fit: scale-down;
     scrollbar-width: none;
     margin-top:2rem;
-    margin-bottom:2rem
+    margin-bottom:2rem;
+    margin-left:3rem
 }
 .zoom {
     width:25rem;
@@ -214,7 +219,7 @@ overflow-x: hidden;
     <img src="portfolio/illustrations/skeletons.png" alt="skeletons" class="image" style="padding: 0;">
 </div>
 
-<div class="zoom">
+<div id="zoom" class="zoom">
    <img src="portfolio/illustrations/journey copy.png" ;>
 </div>
 <p class="text">
@@ -233,6 +238,7 @@ overflow-x: hidden;
 
 <div class="row">
     <img src="portfolio/illustrations/remainssmall.png" class="imagp";>
+   <img src="portfolio/illustrations/aerial5.png" class="imagp";>
     <img src="portfolio/illustrations/communion.png" class="imagp";>
 </div>
 
@@ -245,7 +251,8 @@ overflow-x: hidden;
     <img src="portfolio/illustrations/cityman.png" class="img";>
     <img src="portfolio/illustrations/snail copy.PNG" class="img";>
     <img src="portfolio/illustrations/flowers.png" class="img";>
-    <img src="portfolio/illustrations/bloom.JPG" class="img";></div>
+    <img src="portfolio/illustrations/bloom.JPG" class="img";>
+</div>
 
 <div class="images">
 <img src="portfolio/illustrations/forest.png" class="image">
